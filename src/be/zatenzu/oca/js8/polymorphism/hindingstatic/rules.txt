@@ -1,0 +1,7 @@
+Same rules as Overriding but:
+
+- The method defined in the child must be static
+- The method defined must be static
+
+If the child method is static and not the method in the class --> Compilation error
+and vice versa.

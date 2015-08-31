@@ -1,0 +1,8 @@
+Acces to protected member via an class instance
+================================================
+If you are in the same package as what you want to access and you pass by an instance of the class
+who contents the protected member, or an instance of a class who extends the class who contents the protected
+member, it's ok.
+OR
+your are in the class of the instance that you use to access to the protected member
+and this class extends the class who has the protected member.

@@ -1,0 +1,22 @@
+- Must have the same name
+- Must change the argument list (varargs and array are =)
+- Can change the return type
+- Can change access modifier
+- Can throw different exception
+- A method can be overloaded in the same class or in a subclass
+===============================================================
+- varType > instanceType (compilation time, not runtime)
+- widening > boxing
+- widening > var args
+- boxing > var args
+- IS-A > var args
+==> varargs lose all the time
+- widening + boxing = error
+- unboxing + widening = ok
+- widening + var args = ok
+- boxing + var args = ok
+- boxing + IS-A = ok
+- widening with wrappers doesn't work!
+Wrapper parameter with wrapper argument = Unboxing + Widening + Boxing. (Widening + Boxing is forbidden)!
+
+Overloading -> Method is chosen at compilation time !
