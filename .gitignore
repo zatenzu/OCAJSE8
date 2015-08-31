@@ -41,3 +41,20 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+*.class
+.idea/copyright/profiles_settings.xml
+.idea/.name
+*.iml
+out/production/OCAJSE8/be/zatenzu/oca/js8/access/defaultaccess/conclusion.txt
+out/production/OCAJSE8/be/zatenzu/oca/js8/polymorphism/hindingstatic/rules.txt
+out/production/OCAJSE8/be/zatenzu/oca/js8/polymorphism/overridding/OverridingRules.txt
+.idea/compiler.xml
+.idea/scopes/scope_settings.xml
+.idea/workspace.xml
+.idea/uiDesigner.xml
+.idea/misc.xml
+.idea/modules.xml
+out/production/OCAJSE8/be/zatenzu/oca/js8/access/protectedaccess/conslusion.txt
+out/production/OCAJSE8/be/zatenzu/oca/js8/polymorphism/overloading/OverloaddingRules.txt
+.idea/vcs.xml
+.idea/encodings.xml
