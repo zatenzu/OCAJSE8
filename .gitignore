@@ -58,3 +58,6 @@ out/production/OCAJSE8/be/zatenzu/oca/js8/access/protectedaccess/conslusion.txt
 out/production/OCAJSE8/be/zatenzu/oca/js8/polymorphism/overloading/OverloaddingRules.txt
 .idea/vcs.xml
 .idea/encodings.xml
+out/production/OCAJSE8/be/zatenzu/oca/js8/wrappers/WrapperConstructors.png
+out/production/OCAJSE8/be/zatenzu/oca/js8/primitives/primitives.png
+out/production/OCAJSE8/be/zatenzu/oca/js8/exceptions/exceptions.uml
