@@ -6,18 +6,12 @@ package be.zatenzu.oca.js8._abstract.a;
  */
 public class SubClass extends _Abstract
 {
+  @Override
+  public void myMethod(){}
 
   @Override
-  public void myMethod()
-  {
-    // TODO Auto-generated method stub
-    
-  }
+  public void myMethod2(){}
+
   @Override
-  public void myMethod2()
-  {
-    // TODO Auto-generated method stub
-    
-  }
-  
+  protected void myMethod3(){}
 }
