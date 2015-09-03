@@ -2,8 +2,7 @@
 package be.zatenzu.oca.js8._interface;
 
 /**
- * 
- * - Interface is a 100% abstract class!
+ *
  * - Interface cannot be instantiated directly
  * - Interface is not required to have any method
  * - Interface can extend one or more interfaces
@@ -28,18 +27,19 @@ public /** abstract (implicit) **/ interface _Interface
   int MY_CONST_C = 1;
   
   /** Methods **/
-  void myMethod1();
+  void myMethod1();//-> This is a public abstract method!
   public abstract void myMethod2();
   /**public and abstract are implicit**/
   
-//  void myNonAbtractMethod(){}; --> Forbidden, only abstract or default method in interface!
+//  void myNonAbtractMethod(){}; --> Forbidden, only abstract method in interface!
 
-  //interface static method must have a body
-  public static boolean myStaticMethodInInterface(){
+  //static method is allowed
+  static boolean myStaticMethodInInterface(){
     return true;
   };
+  /** static methods are implicitly public **/
 
-  /** Methods can only be (abstract, default or static) and public **/
+  /** Methods are (abstract and public) or(public static) **/
 }
 //can have more than one interface per file but only one public
 interface Blabla{}
