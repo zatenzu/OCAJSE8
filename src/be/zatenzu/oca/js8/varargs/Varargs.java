@@ -32,6 +32,6 @@ public class Varargs{
     varargs.myMethod("1", "2");//it's varargs
 
     varargs.myMethod();//print 0 because java create an empty array to call myMethod! Big trap!
-    varargs.myMethod(null);//varargs '=' array '=' Object
+//    varargs.myMethod(null);//varargs '=' array '=' Object
   }
 }
