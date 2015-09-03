@@ -10,7 +10,7 @@ public abstract class _Abstract
    * Rules:
    * - Abstract class cannot be instantiated directly(new is forbidden expected for anonymous class)
    * - Abstract class may be defined with any number, including zero, of abstract and non abstract method
-   * - Abstract class may not be marked as private or final
+   * - Abstract class may not be marked as private, protected or final
    * - An abstract class that extends another abstract class inherits all of its abstract
    * methods as its own abstract methods
    * - The first concrete class that extends an abstract class must provide an implementation for all of the inherited
@@ -35,6 +35,7 @@ public abstract class _Abstract
   
   //default package and protected is allowed
   abstract void myMethod2();
+  protected abstract void myMethod3();
   
   public static void main(String[] args)
   {
@@ -56,6 +57,11 @@ public abstract class _Abstract
       {
         // TODO Auto-generated method stub
         
+      }
+
+      @Override
+      protected void myMethod3(){
+
       }
     };
   }
