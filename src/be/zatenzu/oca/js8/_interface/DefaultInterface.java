@@ -14,7 +14,6 @@ public interface DefaultInterface{
    */
   public default void test(){};
   default void test2(){};//yes, It's a public method
-
 }
 
 interface DefaultInterface2 extends DefaultInterface{
