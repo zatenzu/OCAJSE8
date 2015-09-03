@@ -1,4 +1,4 @@
-Acces to protected member via an class instance
+Access to protected member via an class instance
 ================================================
 If you are in the same package as what you want to access and you pass by an instance of the class
 who contents the protected member, or an instance of a class who extends the class who contents the protected
