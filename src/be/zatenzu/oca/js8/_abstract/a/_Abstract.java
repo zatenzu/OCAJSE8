@@ -17,7 +17,7 @@ public abstract class _Abstract
    * abstract methods
    *
    * - Abstract methods may only be defined in abstract class
-   * - Abstract methods may not be declared private or final
+   * - Abstract methods may not be declared private, final or static
    * - Abstract methods must not provide a method body/implementation in the abstract class for which is declared.
    * - Implementing an abstract method in a subclass follows the same rules for overriding a method.
    * */
