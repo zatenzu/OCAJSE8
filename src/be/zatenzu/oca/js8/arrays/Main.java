@@ -35,6 +35,7 @@ public class Main{
     int[] id = {1,2,3,};//last , is useless but legal, size is 3 not 4!
 
     int[][] twoDimensionsTab = new int[2][];//size for the second dimension is not required!!!!
+    int[][] twoDimensionsTab2 = new int[][]{{1,2,3},{1,2,3}};
 
     int i = new int[]{1,2,3}[1];
 //  int[] ii = new int[1]{1,2,3};cannot specify the size two times
@@ -59,14 +60,13 @@ public class Main{
     motherArray = subClassArray;//ok, subclass is a sub class of mother
     myInterfaceArray = subClassArray;//ok, subclass implements MyInterface
     //but
-//    motherArray = new Mother[2];
     subClassArray = (SubClass[])motherArray;// ClassCastException!!
 
 
-    //Doesn't work with primitives
+    /** Widening doesn't work */
 //    double[] intArray = new float[2];
 
-    //Doesn't work with wrapper
+    /** Boxing doesn't work */
 //    Byte[] byteArray = new byte[2];
 //    Double[] doubleArray = new Float[2];
 //    int[] byteArray = new Integer[2];
