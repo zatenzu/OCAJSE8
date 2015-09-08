@@ -1,3 +1,5 @@
+/////  OVERLOADING = COMPILATION TIME ////
+
 - Must have the same name
 - Must change the argument list (varargs and array are =)
 - Can change the return type
@@ -16,7 +18,9 @@
 - widening + var args = ok
 - boxing + var args = ok
 - boxing + IS-A = ok
-- widening with wrappers doesn't work!
-Wrapper parameter with wrapper argument = Unboxing + Widening + Boxing. (Widening + Boxing is forbidden)!
+- widening with wrappers doesn't work because:
+Widening wrapper = Unboxing + Widening + Boxing. (Widening + Boxing is forbidden)!
+
+widening = primitives
 
 Overloading -> Method is chosen at compilation time !
