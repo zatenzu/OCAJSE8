@@ -61,7 +61,8 @@ public class Main{
     //default value is 0
 
     /** float **/
-    //It use to declared a 32-bit floating point value.
+    float f = -1.0f;
+    //It use to declared a 32-bit signed floating point value.
     //default value 0.0
     //It use to declared a numeric variable from 1.4E-45 to 3.4028235E38
 
@@ -75,12 +76,12 @@ public class Main{
     myLong = 99999999999L;
 
     /** double **/
-    //It use to declared a 64-bit floating point value.
+    //It use to declared a 64-bit signed floating point value.
     //Minimal value is 4.9E-324
     //Maximal value is 1.7e+038
     //default value 0.0d
 
-    double d = 23.23;//by default floating point numbers are double!
+    double d = -23.23;//by default floating point numbers are double!
     double dd = 23.23D;//D is implicit
     double ddd = 23.23d;//d is implicit
 //    double ddddd = 23,23d;//not dot but comma dont compile
