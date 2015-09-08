@@ -119,7 +119,7 @@ public class For{
     ranks.add("Z");
     List<String> sortedDeck = new ArrayList();
 
-    // BROKEN - throws NoSuchElementException!
+    //next() with hasNext == false -> NoSuchElementException (RT)
 //    for (Iterator<String> i = suits.iterator(); i.hasNext(); )
 //        for (Iterator<String> j = ranks.iterator(); j.hasNext(); )
 //            sortedDeck.add(new String((i.next() + j.next())));
