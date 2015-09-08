@@ -14,7 +14,7 @@ public class Main{
 
     /** switch */
     //only with:
-    // int, byte, short, char and their wrappers
+    // byte, short, char, int and their wrappers
     // String and enum
     // compiled final var!
 
