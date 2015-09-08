@@ -14,7 +14,7 @@ public class Main{
   //(Personne p) -> {return p.getAge() > 30;}
   //or
   //p -> p.getAge() > 30
-  //if {} then return and ; required
+//  if {} then return(if functional method return something) and ; are required
 
   //if no parameter
 //  () -> true
