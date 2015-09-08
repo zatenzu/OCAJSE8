@@ -28,12 +28,6 @@ public class Main{
 
     //lambda with functional interface
     process(genList(), p -> p.getAge() < 30);
-
-    process(genList(), p -> p.getAge() < 30);
-
-    //lambda with abstract
-//    process2(genList(), p -> p.getAge() < 30);
-
   }
 
   public static List<Personne> genList(){
