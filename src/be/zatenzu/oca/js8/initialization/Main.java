@@ -12,7 +12,7 @@ public class Main{
    * 4) Instance vars and instance blocs in order they appear in the file
    * 5) Constructors, super -> current
    */
-  //if a static bloc, call constructor, keep rule 3 before 4! @see at page 204
+  //if a static bloc, call constructor, keep rule 4 before 5! @see at page 204
   public static void main(String[] args){
     new Child();
   }
