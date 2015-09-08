@@ -6,12 +6,12 @@ package be.zatenzu.oca.js8.operators;
 public class Main{
 
   public static void main(String[] args){
-    /**precedence order */
-    // Post unary operator exp++
+    /** precedence order */
+    // Post unary operators exp++
     // Pre unary operators ++exp
     // Other unary operators +, -, !
-    // Multiplication, dicision, modulus /, * %
-    // Addition, substraction +,-
+    // Multiplication, division, modulus /, * %
+    // Addition, subtraction +,-
     // Shift operators >>, <<, >>>
     // Relational operators <, >, <=, >=, instanceof
     // Equals operator ==,!=
@@ -19,6 +19,7 @@ public class Main{
     // Short circuit logical operators &&, ||
     // Ternary operators boolean exp ? value : value
     // Assignment operators =, +=, -=, *=, /=, ...etc
+    //U.M.A.S.R.E.L.T.A.
 
     /** Promotion of numeric values
      - If two variables of two different types, the smallest one will converted to the highest one
