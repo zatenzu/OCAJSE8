@@ -7,6 +7,7 @@ class Main{
 //  public static void main(String args[]){System.out.println("Hello world from non public class");}
 //  static public void main(String... args){System.out.println("Hello world from non public class");}
 //  public static void main(String abbalblalba[]){System.out.println("Hello world from non public class");}
+//  public static void main(String abbalblalba[]) throws Exception {System.out.println("Hello world from non public class");}
 
 
   /* illegal main declarations */
