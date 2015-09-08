@@ -14,7 +14,6 @@ public class ArrayLists{
     /** public boolean add(E element) */
     //add the element to the collection
     //return true if the collection is modified by the call
-    //elements with index >= position are pushed forward
 
     /** public void add(int index, E element) */
     //add the element at index position
