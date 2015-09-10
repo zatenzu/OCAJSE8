@@ -7,12 +7,13 @@
     <node x="325.0" y="-234.0">java.lang.NoClassDefFoundError</node>
     <node x="-99.0" y="-257.0">java.text.ParseException</node>
     <node x="446.0" y="-276.0">java.lang.StackOverflowError</node>
+    <node x="-480.0" y="-110.0">java.lang.UnsupportedOperationException</node>
     <node x="30.0" y="-257.0">java.io.IOException</node>
     <node x="198.0" y="-273.0">java.lang.ExceptionInInitializerError</node>
     <node x="372.0" y="-324.0">java.lang.Error</node>
     <node x="-258.0" y="-191.0">java.time.DateTimeException</node>
-    <node x="37.0" y="-326.0">java.lang.Exception</node>
     <node x="-446.0" y="-263.0">java.lang.RuntimeException</node>
+    <node x="37.0" y="-326.0">java.lang.Exception</node>
     <node x="34.0" y="-407.0">java.lang.Throwable</node>
     <node x="-451.0" y="-150.0">java.lang.NullPointerException</node>
     <node x="-644.0" y="-58.0">java.lang.NumberFormatException</node>
@@ -47,6 +48,10 @@
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
+    <edge source="java.lang.UnsupportedOperationException" target="java.lang.RuntimeException">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
     <edge source="java.text.ParseException" target="java.lang.Exception">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
@@ -63,11 +68,11 @@
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
-    <edge source="java.lang.NullPointerException" target="java.lang.RuntimeException">
+    <edge source="java.lang.Exception" target="java.lang.Throwable">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
-    <edge source="java.lang.Exception" target="java.lang.Throwable">
+    <edge source="java.lang.NullPointerException" target="java.lang.RuntimeException">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>

@@ -22,6 +22,8 @@ public class CommonExceptions{
 
   //NumberFormatException extends IllegalArgumentException
 
+  //UnsupportedOperationException
+  //When an unauthorized operation is done. example: remove on a backed list
 
   /** Exception */
   //FileNotFoundException -> reference to a non-existing file
