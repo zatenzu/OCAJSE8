@@ -36,6 +36,9 @@ public abstract class _Abstract
   //default package and protected is allowed
   abstract void myMethod2();
   protected abstract void myMethod3();
+
+  //can have static method
+  private static void myStaticMethod(){}
   
   public static void main(String[] args)
   {
