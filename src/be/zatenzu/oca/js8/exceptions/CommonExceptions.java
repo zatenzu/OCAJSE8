@@ -14,13 +14,14 @@ public class CommonExceptions{
   Object obj = type;
   Integer number = (Integer) obj;
 
-  //DateTimeException
+  //DateTimeException -> see time package
 
   //IllegalArgumentException
 
   //NullPointerException
 
   //NumberFormatException extends IllegalArgumentException
+  //parseXxxxx(String s) and valueOf(String s) (see wrappers)
 
   //UnsupportedOperationException
   //When an unauthorized operation is done. example: remove on a backed list
