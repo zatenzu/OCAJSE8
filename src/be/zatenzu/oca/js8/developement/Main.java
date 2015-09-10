@@ -8,7 +8,7 @@ public class Main{
   /** javac [options] [source files] **/
   /*
     javac be/zatenzu/oca/js8/developement/Main.java
-    Compile the class et create Main.class file in the current directory
+    Compile the class et create be/zatenzu/oca/js8/developement/Main.class file in the current directory
   */
 
   /** java [options] class [args] **/
