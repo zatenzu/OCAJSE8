@@ -6,6 +6,10 @@ package be.zatenzu.oca.js8.wrappers;
 public class Main{
   public static void main(String[] args){
 
+    /** if you have the primitive name in method name, it's return the primitive value
+     *  example:booleanValue and parseBoolean return primitive boolean.
+     **/
+
     /** Boolean */
     //Constructor Boolean(boolean b)
     new Boolean(true);
@@ -99,7 +103,7 @@ public class Main{
     myIntWrapper += 2;//create new object, incr. it and assigns it to myIntWrapper
     System.out.println(myIntWrapperBis);
 
-    //other exemples
+    //other examples
     myIntWrapper = new Integer(1234);
     myIntWrapperBis = myIntWrapper;
     System.out.println(myIntWrapper == myIntWrapperBis);//true, it's the same object
