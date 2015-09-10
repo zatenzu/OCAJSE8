@@ -14,7 +14,9 @@ public class OldAPI
      /**  java.util.Date                 **/
     /*************************************/
     /** Constructors **/
+    //public Date()
     Date now = new Date();//now
+    //public Date(long date)
     Date date = new Date(0L);//01/01/1970
     
     /** Methods **/
@@ -34,8 +36,8 @@ public class OldAPI
     //void setTime(Date date);
     cNow.setTime(new Date());
     //void roll(int field, int value)
-    //void roll(int field, boolean rollUp)
     cNow.roll(Calendar.DAY_OF_WEEK, 4);//add 4 days without incr weeks if needed
+    //void roll(int field, boolean rollUp)
     cNow.roll(Calendar.DAY_OF_WEEK, true);//add 1 days without incr weeks if needed
     cNow.roll(Calendar.DAY_OF_WEEK, false);//subtract 1 days without incr weeks if needed
     //void add(int field, int value)
