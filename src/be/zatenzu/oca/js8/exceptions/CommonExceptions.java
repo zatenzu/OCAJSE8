@@ -31,6 +31,8 @@ public class CommonExceptions{
 
   //IOException -> error during read or write data
 
+  //ParseException -> DateFormat df; df.parse("22/02/2015") (old api date)
+
   /** Error */
   //ExceptionInInitializerError -> Thrown by the JVM when a static initializer throws an exception and doesn't handle it
   //static initializer = code who runs during init static class block

@@ -10,6 +10,8 @@ public class Main{
      *  example:booleanValue and parseBoolean return primitive boolean.
      **/
 
+    /** All parseXxxxx(String s) and valueOf(String s) throw NumberformatException expected boolean **/
+
     /** Boolean */
     //Constructor Boolean(boolean b)
     new Boolean(true);

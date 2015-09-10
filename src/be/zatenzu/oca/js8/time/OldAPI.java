@@ -60,7 +60,7 @@ public class OldAPI
     
     /** Methods **/
     //String format(Date d);
-    //Date parse(String dateAsString) throw ParseException
+    //public Date parse(String dateAsString) throw ParseException
     DateFormat df = DateFormat.getInstance();
     System.out.println(df.format(now));
     try
