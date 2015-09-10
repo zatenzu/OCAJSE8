@@ -34,6 +34,7 @@ public class Main{
     String €a;
     String €a$;
     String €a2$_;
+    String €a$2$_;
 
     /** illegal **/
   /*
@@ -49,10 +50,13 @@ public class Main{
 
   /** Initialization **/
   //local variable must initialized before use it.
-  public void myMethodeA(){
+  public int myMethodeA(){
     int x;
     int y = 2;
 //    int z = x + y; //x isn't initialized
+
+//    return x;//x isn't initialized
+    return 0;
   }
 
   //class variables has default value, you don't need to initialize it before use it.
@@ -66,6 +70,6 @@ public class Main{
 
   /** Variable Scope **/
   //local variables -> to the end of the code block
-  //instance variables -> Until the GC detroye it
+  //instance variables -> Until the GC destroy it
   //class variables -> Until the end of the program
 }
