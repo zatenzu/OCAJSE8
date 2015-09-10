@@ -27,6 +27,7 @@ public class MyClass
     
     float f = 100.1f;
     int fi = (int)f;//could loss information -> explicit casting
+    f = fi;
     
     //default floating values are double
     int fpValue = (int)3842.2591;//double to int -> explicit casting
