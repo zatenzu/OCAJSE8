@@ -20,5 +20,5 @@ interface DefaultInterface2 extends DefaultInterface{
 
   //can override default method
   @Override
-  default void test2(){};
+  default void test2(){};//this is a public method
 }
