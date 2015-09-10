@@ -16,7 +16,7 @@ public class StringBuilders{
     /**Main StringBuilder/Buffer methods**/
     /*************************************/
     StringBuilder mainString = new StringBuilder("azerty");
-    /** charAt(), indexOf(), length(), substring() see Stings class */
+    /** charAt(), indexOf(), length(), substring() see Strings class */
 
     /** public StringBuilder append(String s) **/
     mainString.append("ui");
