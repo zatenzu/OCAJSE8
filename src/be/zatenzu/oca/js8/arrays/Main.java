@@ -90,6 +90,8 @@ public class Main{
     System.out.println("Unsorted:" + stringList);
     java.util.Collections.sort(stringList);
     System.out.println("Sorted:" + stringList);
+    //elements must implements comparable
+    //if two elements are not comparable together -> ClassCastException
   }
 
 }
