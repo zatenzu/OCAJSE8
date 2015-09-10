@@ -145,6 +145,10 @@ public class Main{
     lt = lt.minusNanos(212);
     System.out.println(lt);
 
+    /** public String format(DateTimeFormatter formatter) **/
+    LocalTime.now().format(DateTimeFormatter.ISO_TIME);
+    LocalTime.now().format(DateTimeFormatter.ofLocalizedTime(FormatStyle.FULL));
+
     /*************************************/
     /**       LocalDateTime             **/
     /*************************************/
@@ -212,10 +216,14 @@ public class Main{
     /*************************************/
     /**       DateTimeFormatter         **/
     /*************************************/
+    //DateTimeFormatter.ISO_DATE;
+    //DateTimeFormatter.ISO_DATE_TIME;
+    //ect...
+
     /** public static DateTimeFormatter ofLocalizedDate(FormatStyle style) */
     //Get a formatter for a date
     DateTimeFormatter shortDateFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT);//short -> dd/MM/yy
-    DateTimeFormatter mediumDateFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM);//medium -> dd-MOIS-yyyy
+    DateTimeFormatter mediumDateFormatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM);//medium -> dd-Mois-yyyy
     System.out.println(shortDateFormatter.format(LocalDateTime.now()));//dd/MM/yy
     System.out.println(mediumDateFormatter.format(LocalDate.now()));//dd-mois-yyyy
 //    System.out.println(shortDateTime.format(LocalTime.now())); //UnsupportedTemporalTypeException -> No date!
@@ -223,9 +231,9 @@ public class Main{
     /** public static DateTimeFormatter ofLocalizedDateTime(FormatStyle style) */
     //Get a formatter for a datetime
     DateTimeFormatter shortDateTime = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.SHORT);//short -> dd/MM/yy HH:mm
-    DateTimeFormatter mediumDateTime = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM);//medium -> dd-mois-yy HH:mm:ss
+    DateTimeFormatter mediumDateTime = DateTimeFormatter.ofLocalizedDateTime(FormatStyle.MEDIUM);//medium -> dd-Mois-yy HH:mm:ss
     System.out.println(shortDateTime.format(LocalDateTime.now()));//dd/MM/yy HH:mm
-    System.out.println(mediumDateTime.format(LocalDateTime.now()));//dd-mois-yy HH:mm:ss
+    System.out.println(mediumDateTime.format(LocalDateTime.now()));//dd-Mois-yy HH:mm:ss
 //    System.out.println(mediumDateTime.format(LocalDate.now()));//UnsupportedTemporalTypeException -> No time!
 //    System.out.println(shortDateTime.format(LocalTime.now()));//UnsupportedTemporalTypeException -> No date!
 
@@ -235,7 +243,7 @@ public class Main{
     System.out.println(shortTime.format(LocalDateTime.now()));//HH:mm
     System.out.println(mediumTime.format(LocalDateTime.now()));//HH:mm:ss
 //    System.out.println(mediumTime.format(LocalDate.now()));//UnsupportedTemporalTypeException -> no time
-
+    System.out.println(mediumTime.format(LocalTime.now()));//HH:mm:ss
 
     /** String format(DateTimeFormatter formatter) */
     //this method can be called on LocalDate,LocalTime and LocalDateTime.
