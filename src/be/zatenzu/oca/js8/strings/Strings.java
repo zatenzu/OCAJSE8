@@ -14,6 +14,7 @@ public class Strings{
     int ff = 4;
     System.out.println("String" + r + ff);
     System.out.println("String" + ( r + ff ));
+    System.out.println(r + "X");//4X
     //If the left or the right operator is a String, + will be a String concatenation
     //If both operands are numeric, + will be an addition operator
 
@@ -57,7 +58,7 @@ public class Strings{
     /** public int indexOf(String str, int indexFrom) */
     //return -1 if not found
 
-    /** public String substring(int begin) and  **/
+    /** public String substring(int begin) **/
     /** public String substring(int begin, int end) **/
     System.out.println("azerty".substring(2));//erty begin index included at the end
 //    System.out.println("azerty".substring(-2));//IndexOuOfBoundsException
