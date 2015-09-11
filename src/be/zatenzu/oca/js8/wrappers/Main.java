@@ -12,11 +12,18 @@ public class Main{
 
     /** All parseXxxxx(String s) and valueOf(String s) throw NumberFormatException expected boolean **/
 
+    /** All wrappers have a constructor with s String. This constructor call parseXxxx(String s) static method **/
+
     /** Boolean */
-    //Constructor Boolean(boolean b)
+    //Constructor
+    //// public Boolean(boolean b)
     new Boolean(true);
+    //// public Boolean(String s)
+    new Boolean("true");//call the parseBoolean method
     //public boolean booleanValue()
     Boolean booleanWrapper = new Boolean(true);
+    booleanWrapper = new Boolean("true");
+
     booleanWrapper.booleanValue();
     //public static boolean parseBoolean(String s)
     Boolean.parseBoolean("true");//true if !null and equalsIgnoreCase("true")
