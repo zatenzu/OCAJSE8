@@ -32,9 +32,9 @@ public class Main{
     //all compound assignments can be used with implicit casting!
     // +=, -=, *=, /=
     byte b = 3;
-    b = (byte) (b + 7);//result is int (rule 3) -> explicit casting
+    b = (byte) (b + 7);//result is int -> explicit casting (rule 3)
     //but
     byte bbb = 3;
-    bbb += 7;//implicit casting!!
+    bbb += 7;//implicit casting!! (no rule 3 because += isn't binary operator)
   }
 }
