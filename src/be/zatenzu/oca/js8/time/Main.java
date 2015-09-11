@@ -76,6 +76,7 @@ public class Main{
 
     /** public String format(DateTimeFormatter formatter) */
     //return the date as string
+    //can throw DateTimeException
     System.out.println(localDate.format(DateTimeFormatter.ISO_DATE));
     System.out.println(localDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT)));
 
@@ -147,7 +148,10 @@ public class Main{
 
     /** public String format(DateTimeFormatter formatter) **/
     LocalTime.now().format(DateTimeFormatter.ISO_TIME);
-    LocalTime.now().format(DateTimeFormatter.ofLocalizedTime(FormatStyle.FULL));
+    System.out.println(LocalTime.now().format(DateTimeFormatter.ofLocalizedTime(FormatStyle.MEDIUM)));
+
+    LocalTime.parse("23:59");
+    LocalTime.parse("23:59", DateTimeFormatter.ISO_TIME);
 
     /*************************************/
     /**       LocalDateTime             **/
@@ -245,9 +249,8 @@ public class Main{
 //    System.out.println(mediumTime.format(LocalDate.now()));//UnsupportedTemporalTypeException -> no time
     System.out.println(mediumTime.format(LocalTime.now()));//HH:mm:ss
 
-    /** String format(DateTimeFormatter formatter) */
-    //this method can be called on LocalDate,LocalTime and LocalDateTime.
-    //ex localDate.format(shortDateFormatter);
+    /** String format(LocalDateTme ldt) */
+    DateTimeFormatter.ISO_DATE_TIME.format(LocalDateTime.now());
 
     /** public static DateTimeFormatter ofPattern(String s)*/
     /** public static DateTimeFormatter ofPattern(String s, Local l)*/
