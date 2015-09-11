@@ -11,6 +11,10 @@ import java.util.Locale;
 public class Main{
 
   public static void main(String[] args){
+
+    /** format methods are not static **/
+    /** parse methods are static excepted for DateTimeFormatter **/
+
     /*************************************/
     /**       LocalDate                 **/
     /*************************************/
@@ -249,8 +253,11 @@ public class Main{
 //    System.out.println(mediumTime.format(LocalDate.now()));//UnsupportedTemporalTypeException -> no time
     System.out.println(mediumTime.format(LocalTime.now()));//HH:mm:ss
 
-    /** String format(LocalDateTme ldt) */
+    /** String format(LocalDateTme ldt) throw ParseDateTimeException */
     DateTimeFormatter.ISO_DATE_TIME.format(LocalDateTime.now());
+
+    /** public void parse(String s) throw ParseDateTimeException **/
+    DateTimeFormatter.ISO_LOCAL_DATE_TIME.parse("2015-09-11T18:03:35.995");
 
     /** public static DateTimeFormatter ofPattern(String s)*/
     /** public static DateTimeFormatter ofPattern(String s, Local l)*/

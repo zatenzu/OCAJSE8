@@ -52,11 +52,17 @@ public class OldAPI
    /*************************************/
     /** Constructors **/
     //Abstract class!
-//    static DateFormat getInstance();//get date and time format
-//    static DateFormat getDateInstance();//get date format
-//  DateFormat dff = DateFormat.getDateInstance();
-//  DateFormat dff = DateFormat.getDateInstance(int style);
+//  public static DateFormat getInstance();//get date and time format
+//  public static DateFormat getDateInstance();//get date format
+//  public static DateFormat getDateInstance(int style);
+    DateFormat dff = DateFormat.getDateInstance(DateFormat.FULL);
 //  DateFormat dff = DateFormat.getDateInstance(int style, Local locale);
+//  DateFormat dff = DateFormat.getDateTimeInstance();
+//  DateFormat dff = DateFormat.getDateTimeInstance(int style);
+//  DateFormat dff = DateFormat.getDateTimeInstance(int style, Local locale);
+//  DateFormat dff = DateFormat.getTimeInstance();
+//  DateFormat dff = DateFormat.getTimeInstance(int style);
+//  DateFormat dff = DateFormat.getTimeInstance(int style, Local locale);
     
     /** Methods **/
     //String format(Date d);
