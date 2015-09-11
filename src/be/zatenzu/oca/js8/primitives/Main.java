@@ -18,6 +18,7 @@ public class Main{
 
     //numbers are always implicitly int
     byte bb = 8;
+
     //but
     //from int
     int b = 2;
@@ -43,6 +44,7 @@ public class Main{
     //default value is 0
     short s1 = '\u0000';//from unicode char
     s1 = 'A';//from char
+    bb = 0x000F;//hexa
 
     /** char **/
     //char is a 16 bits variable
