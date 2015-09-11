@@ -84,7 +84,7 @@ public class Main{
     /** public static LocalDate parse(CharSequence charSeq, DateTimeFormatter formatter)*/
     DateTimeFormatter formatterA = DateTimeFormatter.ofPattern("ddMMyyyy HH:mm:ss");
     DateTimeFormatter formatterB = DateTimeFormatter.ofPattern("ddMMyyyy HH:mm:ss", Locale.FRANCE);
-    LocalDate.parse("01051986 22:22:22", formatterA);
+    LocalDate.parse("01051986 22:22:22", formatterA);//can throw DateTimeParseException
     LocalDate.parse("01051986 22:22:22", formatterB);
 
     /*************************************/

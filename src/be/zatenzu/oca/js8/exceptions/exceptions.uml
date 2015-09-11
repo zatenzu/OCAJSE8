@@ -5,19 +5,20 @@
   <nodes>
     <node x="-645.0" y="-147.0">java.lang.IllegalArgumentException</node>
     <node x="325.0" y="-234.0">java.lang.NoClassDefFoundError</node>
-    <node x="-99.0" y="-257.0">java.text.ParseException</node>
     <node x="446.0" y="-276.0">java.lang.StackOverflowError</node>
+    <node x="-99.0" y="-257.0">java.text.ParseException</node>
     <node x="-480.0" y="-110.0">java.lang.UnsupportedOperationException</node>
+    <node x="-297.0" y="-49.0">java.time.format.DateTimeParseException</node>
     <node x="30.0" y="-257.0">java.io.IOException</node>
     <node x="198.0" y="-273.0">java.lang.ExceptionInInitializerError</node>
     <node x="372.0" y="-324.0">java.lang.Error</node>
-    <node x="-258.0" y="-191.0">java.time.DateTimeException</node>
+    <node x="-282.0" y="-154.0">java.time.DateTimeException</node>
     <node x="-446.0" y="-263.0">java.lang.RuntimeException</node>
     <node x="37.0" y="-326.0">java.lang.Exception</node>
     <node x="34.0" y="-407.0">java.lang.Throwable</node>
     <node x="-451.0" y="-150.0">java.lang.NullPointerException</node>
     <node x="-644.0" y="-58.0">java.lang.NumberFormatException</node>
-    <node x="-280.0" y="-150.0">java.lang.ClassCastException</node>
+    <node x="-258.0" y="-195.0">java.lang.ClassCastException</node>
     <node x="-486.0" y="-196.0">java.lang.ArrayIndexOutOfBoundsException</node>
     <node x="-1.0" y="-190.0">java.io.FileNotFoundException</node>
     <node x="-645.0" y="-196.0">java.lang.ArithmeticException</node>
@@ -68,11 +69,15 @@
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
+    <edge source="java.lang.NullPointerException" target="java.lang.RuntimeException">
+      <point x="0.0" y="0.0" />
+      <point x="0.0" y="0.0" />
+    </edge>
     <edge source="java.lang.Exception" target="java.lang.Throwable">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
-    <edge source="java.lang.NullPointerException" target="java.lang.RuntimeException">
+    <edge source="java.time.format.DateTimeParseException" target="java.time.DateTimeException">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
@@ -84,11 +89,11 @@
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
-    <edge source="java.io.FileNotFoundException" target="java.io.IOException">
+    <edge source="java.lang.IllegalArgumentException" target="java.lang.RuntimeException">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
-    <edge source="java.lang.IllegalArgumentException" target="java.lang.RuntimeException">
+    <edge source="java.io.FileNotFoundException" target="java.io.IOException">
       <point x="0.0" y="0.0" />
       <point x="0.0" y="0.0" />
     </edge>
