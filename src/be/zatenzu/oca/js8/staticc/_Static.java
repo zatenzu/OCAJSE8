@@ -1,6 +1,8 @@
 // $Id$
 package be.zatenzu.oca.js8.staticc;
 
+//import java.util.Arrays;
+
 import java.util.Arrays;
 
 import static java.util.Arrays.asList;//now you can call directly asList without Arrays
@@ -40,7 +42,7 @@ public class _Static
   public static void main(String[] args)
   {
     asList("", "", "");//because static import
-    Arrays.asList("","","");//can be use like that be you must import the Arrays class too!!
+    Arrays.asList("", "", "");//If you want to use asList like that, you must import the Arrays class too!!
     
 //    System.out.println(myInt);//myInt is not static and we are in a static method.
     System.out.println(myVar);//static var can be used without initialisation, no NPE, no compilation failed, just print null
@@ -54,7 +56,7 @@ public class _Static
     
     //in a static method, you cannot call a non static method
     myStaticMethod();
-    //myMethodA(); -> forbbiden
+    //myMethodA(); -> forbidden
     
     //Cannot use this in a static context
     //this.myInt; -> forbidden
@@ -86,6 +88,10 @@ public class _Static
   //public static abstract void myMethod();
   
   public static void myStaticMethodA(){}//--> Not overriding because myStaticMethodA is static in MotherClass!
+
+  //final + static is allowed
+  //final on a static method -> avoid static hiding (see polymorphism package)
+  public static final void myStaticFinalMethod(){}
   
   /**
    * Static inner class or static nested class
