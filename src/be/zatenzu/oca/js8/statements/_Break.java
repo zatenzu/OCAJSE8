@@ -40,7 +40,7 @@ public class _Break
     }
   
     switch(j){
-      case 0:{System.out.println("Take 0 break!");break;}//inside the braces
+      case 0:{{System.out.println("Take 0 break!");}break;}//inside the braces
       case 1:{System.out.println("Take 1 break!");}break;//outside the braces
       case 2:{System.out.println("Take 2 break!");break;}
       default:{System.out.println("Take default break!");break;}
