@@ -13,6 +13,15 @@ import java.lang.*;// -> useless, this package is auto imported in each classes
 //import java.util.*.*;//cannot have to wildcards
 //import java.util.Random.*;//can only import class, not class content.
 
+//You cannot import two times a class with the same name
+//import be.zatenzu.oca.js8.iimport.packageA.A;
+//import be.zatenzu.oca.js8.iimport.packageB.A;
+
+//Only packageB.A class is imported because explicit import win against wildcard!
+import be.zatenzu.oca.js8.iimport.packageA.*;
+import be.zatenzu.oca.js8.iimport.packageB.A;
+
 
 public class Main{
+  A a;
 }
