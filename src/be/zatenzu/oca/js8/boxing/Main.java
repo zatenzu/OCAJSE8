@@ -10,6 +10,11 @@ public class Main{
 
   public static void main(String[] args){
 
+    /**
+     *
+     * - Autoboxing works with collections
+     * - Autoboxing doesn't work with Predicate
+     **/
     List<Double> doubleList = new ArrayList();
     doubleList.add(3.0);//autoboxes 3.0(double primitive) to Double object
 
