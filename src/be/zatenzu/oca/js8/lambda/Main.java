@@ -7,8 +7,9 @@ public class Main{
 
   /**
    * - Doesn't work with abstract class
-   * - Works only with functional interface (only one method)
-   *
+   * - Works only with functional interface (only one abstract method).
+   * - See Predicate interface for test method
+   * - See removeIf method from ArrayList
    */
 
   //(Personne p) -> {return p.getAge() > 30;}
