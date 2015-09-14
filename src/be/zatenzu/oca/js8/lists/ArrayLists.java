@@ -3,6 +3,7 @@ package be.zatenzu.oca.js8.lists;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.function.Predicate;
 
 /**
  * Created by tda on 2/08/2015.
@@ -56,6 +57,20 @@ public class ArrayLists{
     //and elements at i position are equals
     //vector can be equals to a arrayList or a linkedList!
 
+    /** public boolean removeIf(java.util.function.Predicate<? super E> filter) **/
+    //remove all elements that satisfy the given predicate filer
+    //return true if the list was modified by the call
+    ArrayList<String> arrayList = new ArrayList();
+    arrayList.add("Thomas");
+    arrayList.removeIf(p -> p.equals("Thomas"));
+    //is the same as
+    arrayList.removeIf(new Predicate<String>(){
+      @Override
+      public boolean test(String s){//String because it's a typed String list
+        return s.equals("Thomas");
+      }
+    });
+
     /** non typed ArrayList */
     ArrayList nonTypedArrayList = new ArrayList();
     nonTypedArrayList.add("string");
@@ -94,6 +109,9 @@ public class ArrayLists{
     //return a newly allocated array of T with all value in the collection.
     String[] myArray = new String[3];
     l.toArray(myArray);
+
+    //you can directly print an arraylist -> []
+    System.out.println(new ArrayList());
   }
 
 }
