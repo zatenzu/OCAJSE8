@@ -7,15 +7,16 @@ public class Main{
 
   /** javac [options] [source files] **/
   /*
-    javac be/zatenzu/oca/js8/developement/Main.java
-    Compile the class et create be/zatenzu/oca/js8/developement/Main.class file in the current directory
+    javac be/zatenzu/oca/js8/development/Main.java
+    Compile the class et create be/zatenzu/oca/js8/development/Main.class file in the current directory
   */
 
   /** java [options] class [args] **/
   /*
-    java be.zatenzu.oca.js8.developement.Main.class
+    java be.zatenzu.oca.js8.developement.Main
     run the Main class.
-    .class isn't required
+    if you run java be.zatenzu.oca.js8.developement.Main.class (with .class)
+    -> Erreur : impossible de trouver ou charger la classe principale be.zatenzu.oca.js8.developement.Main.class
    */
 
   //classpath
