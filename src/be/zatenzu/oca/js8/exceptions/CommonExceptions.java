@@ -35,6 +35,7 @@ public class CommonExceptions{
   //ParseException -> DateFormat df; df.parse("22/02/2015") (old api date)
 
   /** Error */
+  //Errors are intended to be thrown by the JVM, not by the programmer
   //ExceptionInInitializerError -> Thrown by the JVM when a static initializer throws an exception and doesn't handle it
   //static initializer = code who runs during init static class block
   //if the static bloc throw exception (ex:IndexOutOfBoundsExc) we get a ExceptionInInitializerError instead
