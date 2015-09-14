@@ -66,12 +66,11 @@ public class _Break
   System.out.println("For loop with break and label");
   firstLoop:
   for(int cpt = 0; cpt < 2; cpt++){
-    secondLoop:
-    for(int cptt = 0; cptt < 3; cptt++){
+    secondLoop:for(int cptt = 0; cptt < 3; cptt++){
       thridLoop:
       for(int cpttt = 0; cpttt < 10; cpttt++){
         if(cpttt == 4 && cptt == 2)
-          break secondLoop;
+          break secondLoop;//goto secondLoop label and the current loop and the secondLoop are ended, we start the next loop of the first loop statement.
         System.out.println("cpt=" + cpt + " cptt=" + cptt + " cpttt=" + cpttt);
       }
     }
