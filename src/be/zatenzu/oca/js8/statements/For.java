@@ -76,6 +76,16 @@ public class For{
       gg++;
     }
 
+    gg = 0;
+    int ggg=0;
+    for(;gg < 10;)
+      do{
+        gg++;
+        System.out.println("For loop without curly brace");
+      }while(gg < 10);
+    //With for loop without braces, only on statement is in the loop body
+    // Warning to multi lines statements!
+
     /**
      * Second for loop type: for each or enhanced for statement
      * for(declaration : expression)
