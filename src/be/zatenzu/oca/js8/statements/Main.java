@@ -19,6 +19,12 @@ public class Main{
     // compiled final var!
 
 
+    //empty statement is allowed
+    if(true){
+    }
+    else{
+    }
+
     /** do while */
     do{}while(true);//; is required!
   }
