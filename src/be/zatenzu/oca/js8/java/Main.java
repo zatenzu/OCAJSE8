@@ -13,4 +13,8 @@ public class Main{
   // - Simple: No pointer, No overloading operator
   // - Secure: Java programs run into JVM -> Sandbox avoid evil code
 
+  /** Java isn't */
+  // - procedural programming language
+  // - functional programming language
+
 }
