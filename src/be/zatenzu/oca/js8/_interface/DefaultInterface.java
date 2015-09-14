@@ -11,6 +11,9 @@ public interface DefaultInterface{
    * - A default method is not assumed to be static, final, or abstract, as it may be used or overridden by a class that implements the interface.
    * - Like all methods in an interface, a default method is assumed to be public and will not compile if marked as private or protected.
    * - If a class implements two interfaces that have default methods with the same name and signature, the compiler will throw an error
+   * - If a class or interface inherits a abstract and a default method with the same signature in the same time, the compiler will throw an error
+   * (@see:tests.intro.q16
+   * - If a interface has 1 or more default method(s) but only one abstract method, it's a functional interface)
    */
   public default void test(){};
   default void test2(){};//yes, It's a public method
