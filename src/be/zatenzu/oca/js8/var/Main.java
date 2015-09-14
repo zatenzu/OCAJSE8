@@ -35,6 +35,7 @@ public class Main{
     String €a$;
     String €a2$_;
     String €a$2$_;
+    String publiC;//legal because java is case sensitive, so keyword with a different case, it's ok.
 
     /** illegal **/
   /*
@@ -44,7 +45,7 @@ public class Main{
     String .f;//.
     String 2a;//cannot start with a cipher
     String a+;//cannot use operators
-    String strictfp;// /!\ keywords!
+    String public;// /!\ keywords!
   */
   }
 
