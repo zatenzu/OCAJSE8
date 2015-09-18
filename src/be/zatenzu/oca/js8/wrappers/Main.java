@@ -104,10 +104,6 @@ public class Main{
     //public static Double valueOf(String s)
     System.out.println(Double.valueOf("1.0d"));//d is allowed
 
-
-    /** == **/
-    //This operator with wrapper compare the primitive value of wrapper
-
     /** WRAPPER OBJECTS ARE IMMUTABLE !!! **/
     System.out.println("=======IMMUTABLE=======");
     Integer myIntWrapper = new Integer(1234);

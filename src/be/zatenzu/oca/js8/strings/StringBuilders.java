@@ -36,8 +36,7 @@ public class StringBuilders{
     /** public StringBuffer reverse() **/
     System.out.println(mainString.reverse());//iuza
 
-    /** public String toString() **/
-    System.out.println(mainString);//you can print directly a StringBuilder (.toString() not required)
+
   }
 
 }

@@ -36,29 +36,5 @@ public class Main{
     //but
     byte bbb = 3;
     bbb += 7;//implicit casting!! (no rule 3 because += isn't binary operator)
-
-    /** Casting scope **/
-//    byte a = (byte) b + bbb;//invalid because (byte) works only on b so byte + byte = int (rule 3)
-    byte a = (byte) (b + bbb);//(byte) works on b + bbb
-
-    /** Unary operators **/
-    //Pre incr
-    int j = 0;
-    j = ++j;
-    System.out.println("j=" + j);//1
-
-    //Post incr
-    int i = 0;
-    i = i++;
-    System.out.println(i);//0 !
-    //because, this code means:
-    //  int oldValue = i;
-    //  i = i + 1;
-    //  i = oldValue;
-    i = 0;
-    i = i + 1;
-    System.out.println(i);
-    //conclusion
-    //(i = i++) != (i = i + 1)
   }
 }

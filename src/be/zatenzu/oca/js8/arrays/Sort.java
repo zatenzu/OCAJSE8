@@ -18,7 +18,7 @@ public class Sort
     //binarySearch(array, valueToSearch)
     //if found, return the index of the key
     System.out.println(java.util.Arrays.binarySearch(myIntArray, 3));//2
-    //if not found, return the -1 * (index where the key will be inserted if you add it + 1)
+    //if not found, return the -1 * index where the key will be inserted if you add it
     System.out.println(java.util.Arrays.binarySearch(myIntArray, 4));//-4
   }
 }
