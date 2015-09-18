@@ -21,6 +21,17 @@ public class Numeric{
     //double notAtStart = _1000.00;        // DOES NOT COMPILE
     //double notAtEnd = 1000.00_;          // DOES NOT COMPILE
     //double notByDecimal = 1000_.00;      // DOES NOT COMPILE
+
+    /** == **/
+    //Object reference
+    String s = new String();
+    int i = 0;
+//    boolean b = (s == 0);
+//  Primitive cannot be compare to object reference
+
+    //base
+    System.out.println(0b11 == 3);
+//    you can compare different bases together
   }
 
 }

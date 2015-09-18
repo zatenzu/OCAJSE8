@@ -1,6 +1,6 @@
 package be.zatenzu.oca.js8.arrays;
 
-import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -9,7 +9,13 @@ import java.util.List;
 public class Main{
 
   public static void main(String[] args){
-    /** Arrays are objects !!!**/
+    /** Array:
+     * - is an object
+     * - is ordered
+     * - isn't sorted
+     * - has a fixed size
+     * - is mutable
+     */
     int[] tab;
     int[] tabA[];//two dimensional array
     int tabB[];
@@ -52,6 +58,13 @@ public class Main{
 //    myTab size = 5
 //    System.out.println(myTab[5]);//Runtime exception!
 
+    /** equals, == and Arrays.equals() **/
+    int[] equalsArray1 = new int[]{1};
+    int[] equalsArray2 = new int[]{1};
+    System.out.println("==:" + (equalsArray1 == equalsArray2));//false
+    System.out.println("equals:" + equalsArray1.equals(equalsArray2));//false because return this == obj
+    System.out.println("Arrays.equals:" + Arrays.equals(equalsArray2, equalsArray2));//true
+
     /** IS-A test ok **/
     Mother[] motherArray = new Mother[2];
     MyInterface[] myInterfaceArray = new MyInterface[2];
@@ -80,18 +93,6 @@ public class Main{
     //the returned list is backed to the original array!!
     //backed list has a fixed size!
 //    motherList.remove(0);//UnsupportedOperationException
-
-    /** Collection.sort(List<T> list) */
-    List<String> stringList = new ArrayList();
-    stringList.add("E");
-    stringList.add("F");
-    stringList.add("H");
-    stringList.add("A");
-    System.out.println("Unsorted:" + stringList);
-    java.util.Collections.sort(stringList);
-    System.out.println("Sorted:" + stringList);
-    //elements must implements comparable
-    //if two elements are not comparable together -> ClassCastException
   }
 
 }

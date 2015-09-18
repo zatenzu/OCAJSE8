@@ -11,6 +11,12 @@ import java.util.function.Predicate;
 public class ArrayLists{
 
   public static void main(String[] args){
+    /** ArrayList:
+     *  - Is ordered
+     *  - Isn't sorted
+     *  - Has a non fixed size
+     *  - Is mutable
+     */
 
     /** public boolean add(E element) */
     //add the element to the collection
@@ -56,6 +62,9 @@ public class ArrayLists{
     //if the object implements the List interface and sizes are equals
     //and elements at i position are equals
     //vector can be equals to a arrayList or a linkedList!
+
+    /** == **/
+    //compare object references
 
     /** public boolean removeIf(java.util.function.Predicate<? super E> filter) **/
     //remove all elements that satisfy the given predicate filer
@@ -112,6 +121,28 @@ public class ArrayLists{
 
     //you can directly print an arraylist -> []
     System.out.println(new ArrayList());
+
+    //capacity method exists but on Vector object... so
+    //arrayList.capacity();doesn't compile!
+
+    /******************/
+    /** Collections  **/
+    /******************/
+    /** Collection.sort(List<T> list) */
+    List<String> stringList = new ArrayList();
+    stringList.add("E");
+    stringList.add("F");
+    stringList.add("H");
+    stringList.add("A");
+    System.out.println("Unsorted:" + stringList);
+    java.util.Collections.sort(stringList);
+    System.out.println("Sorted:" + stringList);
+    //elements must implements comparable
+    //if two elements are not comparable together -> ClassCastException
+
+    /** binarySearch **/
+    System.out.println(Collections.binarySearch(stringList, "B"));//-2
+    //because B will be inserted to 1 position so (index of the position where it will be inserted + 1) * -1
   }
 
 }
