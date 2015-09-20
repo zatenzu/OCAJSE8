@@ -39,6 +39,9 @@ public class Main{
     int[] ic = {1,2,3,};
     //
     int[] id = {1,2,3,};//last , is useless but legal, size is 3 not 4!
+    //but
+//    test({0,0});array initializer is not allowed when method call
+    test(new int[]{1,1,1});
 
     int[][] twoDimensionsTab = new int[2][];//size for the second dimension is not required!!!!
     int[][] twoDimensionsTab2 = new int[][]{{1,2,3},{1,2,3}};
@@ -94,5 +97,7 @@ public class Main{
     //backed list has a fixed size!
 //    motherList.remove(0);//UnsupportedOperationException
   }
+
+  private static void test(int[] tab){}
 
 }
