@@ -10,14 +10,14 @@ package be.zatenzu.oca.js8._interface;
  * - Interface must be public or default access
  * - abstract modifier is implicit
  * - Private, protected or final Interface is forbidden
- * - All non-default methods in an interface are assumed to have the modifiers
+ * - All non-default methods in an interface are assumed to have modifiers
  * abstract and public in their definition. Therefore, marking a method as
  * private, protected, or final will trigger compiler errors as these are
  * incompatible with the abstract and public keywords
  * - Interface cannot extend class
  * - Interface cannot implement interface
  */
-public /** abstract (implicit) **/ interface _Interface
+public /**abstract (implicit) **/ interface _Interface
 {
   /**  interface variables are always constants so public static final are implicit!!**/
   /** only public, static final, nothing else **/
