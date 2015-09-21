@@ -31,9 +31,9 @@ public class MyClass
     
     //which method is called?
     MyClass myClass = new MyClass();
-    myClass.a(a);
-    myClass.a(b);
-    myClass.a(c);
+    myClass.a(a);//Mother
+    myClass.a(b);//Mother
+    myClass.a(c);//SubClass
     // ====> The reference type(NOT the object type) decide which overloaded method is invoke !!!!
     //It's decided at compiler time, not runtime
     
