@@ -47,7 +47,9 @@ public class _Static
 //    System.out.println(myInt);//myInt is not static and we are in a static method.
     System.out.println(myVar);//static var can be used without initialisation, no NPE, no compilation failed, just print null
     System.out.println(_Static.myVar); //no instance is required to access to myVar
-    
+    _Static nullVar = null;
+    System.out.println(nullVar.myVar);//can call static members on null var, no NPE is thrown!
+
     //class variable can be referred from an instance.
     _Static s = new _Static();
     System.out.println(s.myVar);
@@ -75,7 +77,7 @@ public class _Static
   /**
    * Static methods
    */
-  public static int myStaticMethod(){
+  public static Integer myStaticMethod(){
 //    static Integer i = 0;//cannot declare static local var
     //Cannot make a static reference to the non-static field myInt
     //return myInt; -> forbidden
