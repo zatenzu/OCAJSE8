@@ -30,6 +30,7 @@ public class SubClass extends Mother
   
   /** cannot overridde a static method **/
   public static void g(){System.out.println("g-SubClass");}// -> It's a new method!
+//  public void g(){System.out.println("g-SubClass");}// -> compilation error (static super vs non static)
 
   //TODO exception
   public void h(){System.out.println("h-SubClass");}
