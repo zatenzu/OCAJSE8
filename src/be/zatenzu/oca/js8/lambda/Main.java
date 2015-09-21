@@ -17,6 +17,9 @@ public class Main{
   //p -> p.getAge() > 30
 //  if {} then return(if functional method return something) and ; are required
 
+  //if parameter type is defined, () are required
+//  (Personne p) -> p.getAge() > 30
+
   //if no parameter
 //  () -> true
 
@@ -25,7 +28,7 @@ public class Main{
   //or
   //(p,s) -> p.getAge() > 30 && s.equals("")
 
-  //If multi line abstract method
+  //If multi lines method
 //  (p,s) -> {System.out.println("Hello lambda"); return p.getAge() > 30 && s.equals("");}
 
   //if local var
