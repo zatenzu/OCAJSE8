@@ -16,6 +16,7 @@ package be.zatenzu.oca.js8._interface;
  * incompatible with the abstract and public keywords
  * - Interface cannot extend class
  * - Interface cannot implement interface
+ * - Interface doesn't extend Object.
  */
 public /**abstract (implicit) **/ interface _Interface
 {
