@@ -17,6 +17,7 @@ public interface DefaultInterface{
    */
   public default void test(){};
   default void test2(){};//yes, It's a public method
+  default public void test3(){};//default can be after access modifier
 }
 
 interface DefaultInterface2 extends DefaultInterface{
