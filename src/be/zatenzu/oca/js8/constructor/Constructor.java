@@ -19,6 +19,10 @@ public class Constructor
    * - If the parent doesn't have a no-argument constructor, the compiler requires an explicit call to a parent
    * constructor in each child constructor.
    *
+   *
+   * Default constructor is the constructor provided by the compilator.
+   * If you write MyClass(){}, it's not a default constructor.
+   *
    */
 //  final blank var must initialize in each constructors
   final int j;
