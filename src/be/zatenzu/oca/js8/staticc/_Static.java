@@ -9,7 +9,8 @@ import static java.util.Arrays.asList;//now you can call directly asList without
 
 /**
  * Static keyword can be used on a field, method, inner class or import.
- *
+ * Static code is executed when the class is referred for the first time
+ * directly or via inheritance.
  */
 public class _Static
 {
