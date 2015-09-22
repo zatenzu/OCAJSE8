@@ -94,7 +94,7 @@ public class ArrayLists{
 //    typedArrayList.add(3);// Doesn't compile
 
     /** Object[] toArray() */
-    //return an array with all element in the collection
+    //return an array with all elements in the collection
     List l = new ArrayList<>();
     l.add("H");
     l.add("E");
@@ -108,7 +108,8 @@ public class ArrayLists{
     /**
      String[] myArrayFromCollection2 = (String[])collection.toArray();
      ==> java.lang.ClassCastException Object[] to String[] forbidden!!
-     IS-A test fails
+     Because an instance of Object[] cannot become a String[] but an instance of String[] stored in a Object[]
+     can be cast to String[]
      **/
     for (int i=0; i<myArrayFromCollection.length; i++) {
       System.out.println(myArrayFromCollection[i]);
