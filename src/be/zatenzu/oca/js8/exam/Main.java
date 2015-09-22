@@ -9,6 +9,7 @@ public class Main{
   //all other answers are true because the code break only at the line where the exception is thrown
   //and the code can show something before the exception.
   // - When the question is: "are they equal?" equal means equals() not ==
+  // - If something is required, it's allowed too.
 
   /** Vocabulary **/
   //- lenient: indulgent
