@@ -68,15 +68,16 @@ public class Main{
     System.out.println("equals:" + equalsArray1.equals(equalsArray2));//false because return this == obj
     System.out.println("Arrays.equals:" + Arrays.equals(equalsArray2, equalsArray2));//true
 
-    /** IS-A test ok **/
+    /** Array casting **/
+    //follow usual rules of casting
     Mother[] motherArray = new Mother[2];
-    MyInterface[] myInterfaceArray = new MyInterface[2];
     SubClass[] subClassArray = new SubClass[2];
+    MyInterface[] myInterfaceArray = new MyInterface[2];
 
     motherArray = subClassArray;//ok, subclass is a sub class of mother
     myInterfaceArray = subClassArray;//ok, subclass implements MyInterface
-    //but
-    subClassArray = (SubClass[])motherArray;// ClassCastException!!
+    subClassArray = (SubClass[])motherArray;//ok upcasting required.
+    //if the array contains an object which cannot be cast to -> ClassCastException
 
 
     /** Widening doesn't work */
