@@ -27,14 +27,14 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
   */
   public _Final(){
     /**
-     * Final variable can initialized in a constructor 
+     * Final variable can be initialized in a constructor
      */
     myVar = false;
     
     /**
      * Final variable can be only initialized one time.
      */
-    //myVar = true; //forbidden
+    //myVar = true; //forbidden -> compilation error
   }
   
   /**
@@ -62,7 +62,7 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
    */
   
   /**
-   * Final method, the method cannot be overriden or hidden(like override by with static methods) by subclasses.
+   * Final method, the method cannot be overridden or hidden(like override by with static methods) by subclasses.
    */
   @Override
   public void myMethod(int a)
@@ -71,9 +71,9 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
     return;
   }
   
-  /*Forbidden !!!
+  /*Forbidden !!! -> compilation error
    * A final method cannot be Override
-  
+
   @Override
   public void myFinalMethod()
   {
