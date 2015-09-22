@@ -28,6 +28,9 @@ public class SubClass extends Mother
     
     //Compilator error, SubClass never be a String
 //    String s = (String)subClass2;
+    //but
+    Object o = subClass;
+//    String s = (String)o;//Compile fine but throws ClassCastException.
     
     
     /** (Up)casting (subclass (level 2) -> mother (level 1) **/
