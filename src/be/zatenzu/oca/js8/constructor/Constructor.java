@@ -8,7 +8,7 @@ public class Constructor
    * - The first statement of every constructor is a call to another constructor within the class
    * using this(), or a call to a constructor in the direct parent class using super().
    *
-   * - The super() call may not be used after the first statement of the constructor.
+   * - The super() or this() call may not be used after the first statement of the constructor.
    *
    * - If no super() call is declared in a constructor, or this(), Java will insert a no-argument super()
    * as the first statement of the constructor.
