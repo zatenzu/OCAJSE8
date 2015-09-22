@@ -43,9 +43,9 @@ public abstract class _Abstract
   public static void main(String[] args)
   {
     /** abstract class cannot be instantiated **/
-//    new _Abstract(); --> forbbiden, -> compiler error
+//    new _Abstract(); --> forbidden, -> compiler error
     
-    /** Anonimous class based on abstract class -> ok **/
+    /** Anonymous class based on abstract class -> ok **/
     new _Abstract()
     {
       
