@@ -61,4 +61,8 @@ public class MyClass
   // The exception from the catch block gets forgotten
   // if the finally block doesn't throw something, the exception from
   //the catch block is keeped.
+
+  public static void unNeededToThrowSomeThing() throws Error, Exception, RuntimeException{
+    //throws nothing but compile fine.
+  }
 }
