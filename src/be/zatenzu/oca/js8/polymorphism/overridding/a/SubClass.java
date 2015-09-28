@@ -119,5 +119,10 @@ public class SubClass extends Mother
       e.printStackTrace();
     }
   }
-  
+
+
+  @Override
+  public void testTab(int... iii){
+    super.testTab(iii);
+  }
 }

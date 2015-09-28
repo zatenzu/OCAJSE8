@@ -27,4 +27,5 @@ public class Mother
   public void myMethodToOverridde(){
     System.out.println("Mother");
   }
+  public void testTab(int[] iii){};
 }
