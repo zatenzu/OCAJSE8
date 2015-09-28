@@ -23,6 +23,6 @@ public class Main{
   //java -cp ".;c:/tmp/myjar.jar;c:/directory" be.zatenzu.oca.js8.developement.Main.class
   //run Main with current the directory, myjar.jar and c:/directory content in the classpath.
 
-  //java -cp "c:/tmp/myjar.*" be.zatenzu.oca.js8.developement.Main.class
+  //java -cp "c:/tmp/myjar/*" be.zatenzu.oca.js8.developement.Main.class
   //run Main with all jar in the c:/tmp/myjar directory in the classpath. Sub directories aren't included.
 }
