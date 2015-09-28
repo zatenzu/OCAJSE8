@@ -7,7 +7,7 @@ public class Child extends Mother{
 
   //hide s from mother
   String s = "I'm a child";
-//  static String ss = "I'm a child";
+  static String ss = "I'm a child";
 
   public void print(){
     System.out.println(s);
