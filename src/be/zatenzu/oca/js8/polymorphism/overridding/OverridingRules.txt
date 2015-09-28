@@ -1,7 +1,7 @@
 /////  OVERRIDING = RUNTIME ////
 
 - Must have the same name
-- Must have the same argument list
+- Must have the same argument list (varargs and array are =)
 - Must not throw new checked exception
 - Can throw a subtype of checked exception
 - Can omit to redefine the throw exception
