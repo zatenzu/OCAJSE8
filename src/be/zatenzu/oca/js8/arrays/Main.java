@@ -24,7 +24,7 @@ public class Main{
     int[][][] tabE;//tree dimensional array
     int[][] tabZ[];//tree dimensional array
     float[] myTab = new float[5];
-//  int[5] tabF = new int[5]; Never initialize with size at the variable type
+//  int[5] tabF = new int[]; Never initialize with size at the variable type
 
     // /!\ Exception
     int[] mytab1, mytab2;// declare two arrays
