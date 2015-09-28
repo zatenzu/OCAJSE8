@@ -32,6 +32,7 @@ public class Main{
     String _;
     String a€;
     String €a;
+    String €;
     String €a$;
     String €a2$_;
     String €a$2$_;
