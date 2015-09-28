@@ -52,7 +52,7 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
   
   public void myMethodAB(final Class1 class1){
     class1.x = 2;//modify the instance
-//    class1 = new Class1();//cannot creat new instance
+//    class1 = new Class1();//cannot create new instance
   }
   
   /**
@@ -79,7 +79,12 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
   {
     return;
   }
-   */
+
+  @Override
+  public void myFinalStaticMethod(){
+  }
+  */
+
 
   public static void main(String[] args)
   {

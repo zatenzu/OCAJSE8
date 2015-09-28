@@ -11,4 +11,7 @@ public class Class1
   public final void myFinalMethod(){
     return;
   }
+  public static final void myFinalStaticMethod(){
+    return;
+  }
 }
