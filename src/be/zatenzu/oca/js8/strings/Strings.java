@@ -1,6 +1,5 @@
 package be.zatenzu.oca.js8.strings;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
@@ -11,13 +10,6 @@ import java.util.List;
 public class Strings{
 
   public static void main(String[] args){
-
-    /*************************************/
-    /** Constructors                    **/
-    /*************************************/
-    new ArrayList<>();
-    new ArrayList<>(1);
-    new ArrayList<>(new ArrayList<>());
 
     /*************************************/
     /** Concatenation                   **/
@@ -126,7 +118,7 @@ public class Strings{
     /**********************************/
     /** Sorted                      **/
     /*********************************/
-    List<String> arrayOfChar = Arrays.asList("-","1","a","A", "€", "#");
+    List<String> arrayOfChar = Arrays.asList("-","1","a","A", "€", "#", "@");
     Collections.sort(arrayOfChar);
     System.out.println(arrayOfChar);//#,-,1,A,a,€
     //number before letter
