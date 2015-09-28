@@ -12,7 +12,7 @@ public class Main{
 
     /** All parseXxxxx(String s) and valueOf(String s) throw NumberFormatException expected boolean **/
 
-    /** All wrappers have a constructor with s String. This constructor call parseXxxx(String s) static method **/
+    /** All wrappers have a constructor with s String (Character excepted). This constructor call parseXxxx(String s) static method **/
 
     /** Boolean */
     //Constructor
@@ -29,6 +29,8 @@ public class Main{
     Boolean.parseBoolean("true");//true if !null and equalsIgnoreCase("true")
     //public static Boolean valueOf(String s)
     Boolean.valueOf("true");//true if !null and equalsIgnoreCase("true")
+    //public static Boolean valueOf(boolean b)
+    Boolean.valueOf(true);
 
     /** Byte */
     //Constructor Byte(byte b)
