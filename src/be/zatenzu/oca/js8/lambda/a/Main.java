@@ -1,11 +1,8 @@
 package be.zatenzu.oca.js8.lambda.a;
 
-import be.zatenzu.oca.js8.lambda.a.Personne;
-import be.zatenzu.oca.js8.lambda.a.Predicate;
-import be.zatenzu.oca.js8.lambda.a.Predicate2;
-
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Predicate;
 
 /**
  * Created by tda on 19/08/2015.
