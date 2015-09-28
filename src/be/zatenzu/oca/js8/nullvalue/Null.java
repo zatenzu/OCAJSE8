@@ -11,6 +11,7 @@ public class Null{
    */
 
   public static void main(String[] args){
+    System.out.println(null == null);//true
 //    testNull(null);//casting null is required
     testNull2(null);//String extends Object, the subtype is chosen. No casting required
     testNull3(null);//Warning! Don't apply same rules as overloading.
