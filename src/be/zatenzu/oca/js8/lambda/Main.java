@@ -1,5 +1,9 @@
 package be.zatenzu.oca.js8.lambda;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.function.Predicate;
+
 /**
  * Created by tda on 19/08/2015.
  */
@@ -33,4 +37,17 @@ public class Main{
 
   //if local var
 //  (p,s) -> {int i = 0; return p.getAge() > 30 && s.equals("");}
+  public static void main(String[] args){
+    /** List removeIf */
+    List<String> myList = new ArrayList<String>();
+    myList.removeIf(new Predicate<String>(){
+      @Override
+      public boolean test(String s){
+        return false;
+      }
+    });
+    //OR
+    myList.removeIf(s -> s == null);
+  }
+
 }
