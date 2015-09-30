@@ -30,7 +30,7 @@ public class Main{
     //public static Boolean valueOf(String s)
     Boolean.valueOf("true");//true if !null and equalsIgnoreCase("true")
     //public static Boolean valueOf(boolean b)
-    Boolean.valueOf(true);
+    Boolean.valueOf(true);//no NFE ! valueOf(primitive) <> valueOf(String)
 
     /** Byte */
     //Constructor Byte(byte b)
