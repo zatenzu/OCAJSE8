@@ -29,6 +29,8 @@ public class StringBuilders{
     System.out.println(mainString.delete(2, 5));//azyui
     //beging index is included
     //end index is excluded
+    //if endindex is out of range, delete all to the end of the string -> No IORE !!
+    //if beginIndex == endIndex do nothing
 
     /** public StringBuilder deleteCharAt(int index)**/
     System.out.println(mainString.deleteCharAt(2));//azui
