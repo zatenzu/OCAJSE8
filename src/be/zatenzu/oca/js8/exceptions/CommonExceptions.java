@@ -15,6 +15,8 @@ public class CommonExceptions{
   Integer number = (Integer) obj;
 
   //DateTimeException -> see time package
+  //UnsupportedTemporalTypeException, extends DateTimeException
+  //DateTimeParseException, extends DateTimeException
 
   //IllegalArgumentException
 
