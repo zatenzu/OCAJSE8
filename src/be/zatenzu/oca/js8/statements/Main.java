@@ -8,7 +8,7 @@ public class Main{
   public static void main(String[] args){
     /** ternary operator  */
     boolean b = true ? true : false;// boolean expression ? if the expression is true : if the expression is false
-  /* double ternary operator  */
+    /* double ternary operator  */
     boolean bb = true ? true ? true : false : false;
     //short circuit!
 
