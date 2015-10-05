@@ -13,6 +13,7 @@ public class Main{
     /**
      *
      * - Autoboxing works with collections
+     * - Autoboxing works with array
      * - Autoboxing doesn't work with Predicate
      **/
     List<Double> doubleList = new ArrayList();
