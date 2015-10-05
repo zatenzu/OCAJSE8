@@ -30,7 +30,7 @@ public class OldAPI
     Calendar cNow = Calendar.getInstance();//now
 //    Calendar cNow = new Calendar();//Abstract !
     
-    /** Methodes **/
+    /** Methods **/
     //Date getTime();
     cNow.getTime();
     //void setTime(Date date);
