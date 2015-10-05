@@ -16,4 +16,5 @@ class Main{
 //  public static void main(String[] agrs, int i){}//must take only a String array parameter (or varargs)
 //  public static int main(String... args){return 0;}//must return void
 //  public static void Main(String[] args){System.out.println("Hello world from non public class");} -> NoSuchMethodException
+//  public static void main(Object abbalblalba[]) throws Exception {System.out.println("Hello world from non public class");}
 }
