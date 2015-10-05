@@ -86,6 +86,8 @@ public class Main{
 
     /** public static LocalDate parse(CharSequence charSeq)*/
     LocalDate.parse("1986-05-01");
+    //the string must be a date in ISO format
+
     /** public static LocalDate parse(CharSequence charSeq, DateTimeFormatter formatter)*/
     DateTimeFormatter formatterA = DateTimeFormatter.ofPattern("ddMMyyyy HH:mm:ss");
     DateTimeFormatter formatterB = DateTimeFormatter.ofPattern("ddMMyyyy HH:mm:ss", Locale.FRANCE);
@@ -165,22 +167,22 @@ public class Main{
     System.out.println(LocalDateTime.now());
 
     /** public static LocalDateTime of(int year, int month, int day, int hour, int minute) */
-    LocalDateTime.of(2015, 12, 25, 12, 55);
+    LocalDateTime.of(2015, 12, 25, 12, 55);//DateTimeException!
 
     /** public static LocalDateTime of(int year, int month, int day, int hour, int minute, int second) */
-    LocalDateTime.of(2015, 12, 25, 12, 55, 59);
+    LocalDateTime.of(2015, 12, 25, 12, 55, 59);//DateTimeException!
 
     /** public static LocalDateTime of(int year, int month, int day, int hour, int minute, int second, int nanosecond) */
-    LocalDateTime.of(2015, 12, 25, 12, 55, 59, 200);
+    LocalDateTime.of(2015, 12, 25, 12, 55, 59, 200);//DateTimeException!
 
     /** public static LocalDateTime of(int year, int month, int day, int hour, int minute) */
-    LocalDateTime.of(2015, Month.DECEMBER, 25, 12, 55);
+    LocalDateTime.of(2015, Month.DECEMBER, 25, 12, 55);//DateTimeException!
 
     /** public static LocalDateTime of(int year, Month month, int day, int hour, int minute, int second) */
-    LocalDateTime.of(2015, Month.DECEMBER, 25, 12, 55, 59);
+    LocalDateTime.of(2015, Month.DECEMBER, 25, 12, 55, 59);//DateTimeException!
 
     /** public static LocalDateTime of(int year, Month month, int day, int hour, int minute, int second, int nanosecond) */
-    LocalDateTime.of(2015, Month.DECEMBER, 25, 12, 55, 59, 200);
+    LocalDateTime.of(2015, Month.DECEMBER, 25, 12, 55, 59, 200);//DateTimeException!
 
     /** public static LocalDateTime of(LocalDate date, LocalTime time) */
     LocalDateTime.of(LocalDate.now(), LocalTime.now());
@@ -198,6 +200,10 @@ public class Main{
     /*************************************/
     /**       Period                    **/
     /*************************************/
+
+    //
+    // class methods
+    //
     /** public static Period ofYears(int years) */
     //Obtains a Period representing a number of years (+ or -)
     Period p = Period.ofYears(1);
@@ -218,8 +224,46 @@ public class Main{
     //Obtains a Period representing a number of days, months, years (+ or -)
     p = Period.of(1, 1, 1);
 
-    /** static chaining */
-    Period.of(2015, 5, 1);
+    /** public static Period between(LocalDate fromDate, LocalDate toDate) **/
+    //Return the period between fromDate(included) to toDate (excluded)
+    p = Period.between(LocalDate.now(), LocalDate.now());//from and end cannot be null -> NPE
+
+    //
+    // instance methods
+    //
+    /** public Period withDays(int i) **/
+    //returns a copy of the period and sets days to i
+
+    /** public Period withDays(int d) **/
+    //returns a copy of the period and sets days to d
+
+    /** public Period withMonths(int m) **/
+    //returns a copy of the period and sets months to m
+
+    /** public Period withYears(int y) **/
+    //returns a copy of the period and sets years to y
+
+    /** public Period minusDays(long d) **/
+    //Returns a copy of the period with d days subtracted
+
+    /** public Period minusMonths(long m) **/
+    //Returns a copy of the period with m months subtracted
+
+    /** public Period minusYears(long y) **/
+    //Returns a copy of the period with y years subtracted
+
+    /** public Period plusDays(long d) **/
+    //Returns a copy of the period with d days added
+
+    /** public Period plusMonths(long m) **/
+    //Returns a copy of the period with m months added
+
+    /** public Period plusYears(long y) **/
+    //Returns a copy of the period with y years added
+
+    /** public String toString() **/
+    //Return the period as string
+    System.out.println(Period.of(1, 2, 3));//P1Y2M3D
 
     /*************************************/
     /**       DateTimeFormatter         **/
@@ -253,10 +297,10 @@ public class Main{
 //    System.out.println(mediumTime.format(LocalDate.now()));//UnsupportedTemporalTypeException -> no time
     System.out.println(mediumTime.format(LocalTime.now()));//HH:mm:ss
 
-    /** String format(LocalDateTme ldt) throw ParseDateTimeException */
+    /** String format(LocalDateTme ldt) throw DateTimeException */
     DateTimeFormatter.ISO_DATE_TIME.format(LocalDateTime.now());
 
-    /** public void parse(String s) throw ParseDateTimeException **/
+    /** public void parse(String s) throw DateTimeParseException **/
     DateTimeFormatter.ISO_LOCAL_DATE_TIME.parse("2015-09-11T18:03:35.995");
 
     /** public static DateTimeFormatter ofPattern(String s)*/
