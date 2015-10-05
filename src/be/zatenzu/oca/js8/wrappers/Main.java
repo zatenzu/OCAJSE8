@@ -34,7 +34,7 @@ public class Main{
 
     /** Byte */
     //Constructor Byte(byte b)
-    new Byte((byte)1);
+    Byte b1 = new Byte((byte)1);
     //public byte byteValue()
     Byte byteWrapper = new Byte((byte)1);
     byteWrapper.byteValue();
@@ -42,6 +42,7 @@ public class Main{
     Byte.parseByte("-1");//- or + and all decimal digit
     //public static Byte valueOf(String s)
     Byte.valueOf("1");//- or + and all decimal digit
+    Byte.valueOf(b1);
 
     /** Short */
     //Constructor Short(short s)
