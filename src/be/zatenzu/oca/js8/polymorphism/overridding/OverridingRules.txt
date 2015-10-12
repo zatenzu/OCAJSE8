@@ -12,7 +12,7 @@
 - Can return a sub type of the returned type
 - Cannot reduce the visibility -> No error but it's not overriding
 - If the method is final, It's not overriding
-- If the method isn't visible, It's not overriding
+- If the method isn't visible, It's not overriding -> No compilation error
 - If the method is static, It's not overriding
 
 /!\ At compilation, check exception
