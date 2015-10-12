@@ -1,5 +1,9 @@
 package be.zatenzu.oca.js8.exceptions;
 
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.text.ParseException;
+
 /**
  * Created by tda on 20/08/2015.
  */
@@ -46,4 +50,40 @@ public class CommonExceptions{
 
   //NoClassDefFoundError -> Thrown by the JVM when a class that the code uses is available at compile time but not runtime
 
+
+  /** declaration rules **/
+
+  //checked
+  public void method() throws IOException{
+//    throw new Exception();//cannot throw a super exception of the exception that is declare with throws keyword
+  }
+  public void method2() throws IOException{
+    //nothing required
+  }
+  public void method3() throws IOException{
+    throw new FileNotFoundException();//can throw sub class
+  }
+
+  //unchecked
+  public void method4() throws IndexOutOfBoundsException{
+    //nothing required
+  }
+  public void method5() throws RuntimeException{
+    throw new IndexOutOfBoundsException();//can throw sub class of runtime
+  }
+  public void method6() throws IndexOutOfBoundsException{
+    throw new RuntimeException();//can throw super class
+  }
+
+  //catch rules
+  public static void main(String[] args){
+    try{
+      System.out.println("Hellow world");
+    }
+    catch(IndexOutOfBoundsException e){}
+    catch(RuntimeException e){}
+//    catch(ParseException e){} -> ParseException cannot be thrown in the try
+    catch(Exception e){}
+    catch(Error e){}
+  }
 }
