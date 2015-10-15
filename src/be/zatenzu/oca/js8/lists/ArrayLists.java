@@ -47,6 +47,7 @@ public class ArrayLists{
     //remove the element at the index position
     //return the removed element or null
     //Shifts any subsequent elements to the left
+    //!\\ List<Integer> -> remove(0) (index) but remove(new Integer(0)) remove(Object)!
 
     /** public E set(int index, E newElement) */
     // set the object o at the position 'index'
