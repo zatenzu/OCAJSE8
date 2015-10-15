@@ -40,7 +40,7 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
   /**
    * myVar must be initialized in each constructor
    */
-  //public _Final(boolean b){} //forbidden
+//  public _Final(boolean b){} //forbidden -> compilation error at declaration var line
   
   /*
    * On a method parameter
