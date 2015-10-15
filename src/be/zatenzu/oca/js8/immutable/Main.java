@@ -8,6 +8,7 @@ public class Main{
   /** Immutability:                   **/
   /** - Immutable object cannot be modified
   /** - Immutable object can be garbage collected
+  /** - Immutable object are thread safe
   /*************************************/
   //see page 207
 }
