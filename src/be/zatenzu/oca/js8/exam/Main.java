@@ -13,4 +13,5 @@ public class Main{
 
   /** Vocabulary **/
   //- lenient: indulgent
+  //- should: must
 }
