@@ -26,17 +26,19 @@ public class CommonExceptions{
 
   //NullPointerException
 
-  //NumberFormatException extends IllegalArgumentException
+  //NumberFormatException extends IllegalArgumentException (only by programmer)
   //parseXxxxx(String s) and valueOf(String s) (@see wrappers)
 
   //UnsupportedOperationException
   //When an unauthorized operation is done. example: remove on a backed list
 
+  //NoSuchElementException
+  //iterator.next when hasNext() return false;
   /** Exception */
   //FileNotFoundException -> reference to a non-existing file
   //extends IOException
 
-  //IOException -> error during read or write data
+  //IOException -> error during read or write data (only by programmer)
 
   //ParseException -> DateFormat df; df.parse("22/02/2015") (old api date)
 
