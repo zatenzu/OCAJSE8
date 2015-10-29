@@ -11,4 +11,7 @@ public class Main{
   /** - Immutable object are thread safe
   /*************************************/
   //see page 207
+  //wrappers are immutable
+  //String are immutable
+  //LocalTime, LocalDAte, LocalDateTime, Duration and Period are immutable.
 }
