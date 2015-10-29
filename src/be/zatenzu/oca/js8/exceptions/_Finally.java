@@ -6,6 +6,7 @@ public class _Finally
   public static void main(String[] args)
   {
     // finally can be used without catch block
+    // {} are required with finally
     try{
       System.out.println("");
     }finally{}
@@ -23,13 +24,15 @@ public class _Finally
     
     try{
       System.out.println("");
+      System.exit(-1);//1
     }
     catch(Exception ex){
-      System.exit(-1);
+      System.exit(-1);//2
     }
     finally{
       System.out.println("This code never runs");
     }
+    //with only exit 1 or 2
     
     //See try and catch keywords
   }
