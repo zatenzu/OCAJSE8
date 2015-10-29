@@ -12,9 +12,20 @@ public class StringBuilders{
     /** StringBuilder and StringBuffer are the same excepted StringBuilder isn't thread safe!!! **/
     //So the API is the same
 
-    /*************************************/
-    /**Main StringBuilder/Buffer methods**/
-    /*************************************/
+    /***************************************/
+    /**         Constructors              **/
+    /***************************************/
+    /** public StringBuilder() */
+    new StringBuilder();
+    /** public StringBuilder(int capacity) */
+    new StringBuilder(16);
+    /** public StringBuilder(String s) */
+    new StringBuilder("string");
+    /** public StringBuilder(CharSequence seq) */
+
+    /***************************************/
+    /** Main StringBuilder/Buffer methods **/
+    /***************************************/
     StringBuilder mainString = new StringBuilder("azerty");
     /** charAt(), indexOf(), length(), substring() see Strings class */
 
@@ -40,6 +51,12 @@ public class StringBuilders{
 
     /** public String toString() **/
     System.out.println(mainString);//you can print directly a StringBuilder (.toString() not required)
+
+    /** equals */
+    //StringBuilder doesn't override equals !!!
+    StringBuilder s1 = new StringBuilder("meow");
+    StringBuilder s2 = new StringBuilder("meow");
+    System.out.println(s1.equals(s2));//false!
   }
 
 }
