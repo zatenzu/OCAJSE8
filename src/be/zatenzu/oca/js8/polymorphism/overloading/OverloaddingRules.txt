@@ -5,6 +5,7 @@
 - Can change the return type
 - Can change access modifier
 - Can throw different exception
+- Can have different modifiers. (final, static, abstract...)
 - A method can be overloaded in the same class or in a subclass
 ===============================================================
 - varType > instanceType (compilation time, not runtime)
