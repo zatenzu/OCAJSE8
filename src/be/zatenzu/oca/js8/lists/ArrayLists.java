@@ -1,6 +1,7 @@
 package be.zatenzu.oca.js8.lists;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 import java.util.function.Predicate;
@@ -106,6 +107,7 @@ public class ArrayLists{
 
     /** Object[] toArray() */
     //return an array with all elements in the collection
+    //! backed
     List l = new ArrayList<>();
     l.add("H");
     l.add("E");
@@ -127,9 +129,34 @@ public class ArrayLists{
     }
 
     /** T[] toArray(T[] t) **/
+    //T is the type of the list
     //return a newly allocated array of T with all value in the collection.
+
+    List<String> myStringsList = new ArrayList<>();
     String[] myArray = new String[3];
-    l.toArray(myArray);
+    String[] myNewArray = myStringsList.toArray(myArray);
+
+    /** List to array */
+    ArrayList<String> alphaList = new ArrayList();
+    String[] alphaArray = {"A", "B", "C", "D"};
+    alphaList.add("A");
+    alphaList.add("B");
+    alphaList.add("C");
+    alphaList.add("D");
+    alphaArray = alphaList.toArray(alphaArray);
+
+    System.out.println("Without update");
+    System.out.println(Arrays.toString(alphaArray));
+    System.out.println(alphaList);
+    System.out.println("With update on list");
+    alphaList.set(0, "Z");
+    System.out.println(Arrays.toString(alphaArray));
+    System.out.println(alphaList);
+    System.out.println("With update on array");
+    alphaArray[0] = "B";
+    System.out.println(Arrays.toString(alphaArray));
+    System.out.println(alphaList);
+    //not backed !!
 
     //you can directly print an arraylist -> []
     System.out.println(new ArrayList());
