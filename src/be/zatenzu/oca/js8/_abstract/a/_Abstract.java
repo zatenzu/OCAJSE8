@@ -3,7 +3,8 @@ package be.zatenzu.oca.js8._abstract.a;
 
 //public abstract final class -> stupid and forbidden
 // final cannot be extend and abstract is made to be extend
-public abstract class _Abstract
+//class abstract _Abstract forbidden
+public abstract class _Abstract //or abstract public class _Abstract
 {
   /**
    *
@@ -22,7 +23,7 @@ public abstract class _Abstract
    * - Implementing an abstract method in a subclass follows the same rules for overriding a method.
    * */
   //only with one abstract method, and your class must be abstract too
-  public abstract void myMethod();
+  public abstract void myMethod();//; is required for abstract method
   
   // private and abstract, forbidden
 //  private abstract void myMethod1();
