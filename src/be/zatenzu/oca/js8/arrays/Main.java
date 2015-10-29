@@ -1,5 +1,6 @@
 package be.zatenzu.oca.js8.arrays;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
@@ -36,7 +37,8 @@ public class Main{
     //or like this
     int[] ib = new int[3];
     //or like this
-    int[] ic = {1,2,3,};
+    int[] ic = {1,2,3};//array initializer can only use at var declaration
+//    ic = {1,2,3};//array initializer can only use at var declaration
     //
     int[] id = {1,2,3,};//last , is useless but legal, size is 3 not 4!
     //but
@@ -61,12 +63,17 @@ public class Main{
 //    myTab size = 5
 //    System.out.println(myTab[5]);//Runtime exception!
 
+    int [][] twoDimArray = new int[1][1];
+    twoDimArray[0][0] = 0;
+    //twoDimArray[0,0] = 0; -> not like that!
+
     /** equals, == and Arrays.equals() **/
     int[] equalsArray1 = new int[]{1};
     int[] equalsArray2 = new int[]{1};
     System.out.println("==:" + (equalsArray1 == equalsArray2));//false
     System.out.println("equals:" + equalsArray1.equals(equalsArray2));//false because return this == obj
     System.out.println("Arrays.equals:" + Arrays.equals(equalsArray2, equalsArray2));//true
+    //Arrays.equals() take 2 primitive arrays of the same type or 2 object arrays! int[] never be equals to Integer[]
 
     /** Array casting **/
     //follow usual rules of casting
@@ -80,23 +87,36 @@ public class Main{
     //if the array contains an object which cannot be cast to -> ClassCastException
 
 
-    /** Widening doesn't work */
-//    double[] intArray = new float[2];
+    /** Widening doesn't work with array type*/
+//    double[] doubleArray = new float[2];
+    //but work with array content
+    double[] doubleArray = new double[1];
+    doubleArray[0] = 2f;
 
-    /** Boxing doesn't work */
+    /** Boxing doesn't work with array type */
 //    Byte[] byteArray = new byte[2];
 //    Double[] doubleArray = new Float[2];
 //    int[] byteArray = new Integer[2];
+    //but works with array content
+    int[] intArray = new int[1];
+    intArray[0] = new Integer(2);
 
     /** Arrays.sort(T[] t) **/
     //T must implement comparable interface
     /** Arrays.sort(T[] t, Comparator c) **/
 
     /** List<T> java.util.Arrays.asList(T[] t) **/
-    List<Mother> motherList = java.util.Arrays.asList(motherArray);
+    String[] myStringsTab = {"1", "2", "3"};
+    List<String> motherList = java.util.Arrays.asList(myStringsTab);
     //the returned list is backed to the original array!!
     //backed list has a fixed size!
-//    motherList.remove(0);//UnsupportedOperationException
+    //motherList.remove(0);//UnsupportedOperationException
+    motherList.set(0, "zero");//ok
+    System.out.println(motherList);
+    System.out.println(myStringsTab[0]);
+
+    /** toString */
+    System.out.println(new String[]{"1", "2", "3"});//[Ljava.lang.String;@74a14482
   }
 
   private static void test(int[] tab){}
