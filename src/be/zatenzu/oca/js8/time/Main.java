@@ -3,6 +3,9 @@ package be.zatenzu.oca.js8.time;
 import java.time.*;
 import java.time.format.DateTimeFormatter;
 import java.time.format.FormatStyle;
+import java.time.temporal.ChronoUnit;
+import java.time.temporal.Temporal;
+import java.time.temporal.TemporalUnit;
 import java.util.Locale;
 
 /**
@@ -12,12 +15,16 @@ public class Main{
 
   public static void main(String[] args){
 
+    //LocalDate, LocalDateTime, LocalTime, Period and Duration are IMMUTABLE and thread-safe
     /** format methods are not static **/
     /** parse methods are static excepted for DateTimeFormatter **/
 
     /*************************************/
     /**       LocalDate                 **/
     /*************************************/
+
+    //!\ IMMUTABLE !
+
     //Contains just date
     /** public static LocalDate now() */
     System.out.println(LocalDate.now());
@@ -30,7 +37,7 @@ public class Main{
     LocalDate.of(2015, Month.AUGUST, 9);
 
     /** public LocalDate plusDays(long daysToAdd) */
-    //add days to the date
+    //create a copy, add days and return this copy. The instance isn't modified
     LocalDate localDate = LocalDate.now();
     localDate = localDate.plusDays(2);
     System.out.println(localDate);
@@ -84,7 +91,7 @@ public class Main{
     System.out.println(localDate.format(DateTimeFormatter.ISO_DATE));
     System.out.println(localDate.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT)));
 
-    /** public static LocalDate parse(CharSequence charSeq)*/
+    /** public static LocalDate parse(CharSequence charSeq) throw DateTimeParseException */
     LocalDate.parse("1986-05-01");
     //the string must be a date in ISO format
 
@@ -97,6 +104,8 @@ public class Main{
     /*************************************/
     /**       LocalTime                 **/
     /*************************************/
+    //!\\ Immutable !
+
     //Contains just time
     /** public static LocalTime now() */
     System.out.println(LocalTime.now());
@@ -162,6 +171,8 @@ public class Main{
     /*************************************/
     /**       LocalDateTime             **/
     /*************************************/
+    //!\\ IMMUTABLE
+
     //Contains date and time
     /** public static LocalDateTime now() */
     System.out.println(LocalDateTime.now());
@@ -200,7 +211,7 @@ public class Main{
     /*************************************/
     /**       Period                    **/
     /*************************************/
-
+    // = Date based
     //
     // class methods
     //
@@ -264,6 +275,12 @@ public class Main{
     /** public String toString() **/
     //Return the period as string
     System.out.println(Period.of(1, 2, 3));//P1Y2M3D
+
+    /*************************************/
+    /**       Duration                  **/
+    /*************************************/
+    // time based
+    Duration.of(0L, ChronoUnit.HOURS); //can throw UnsupportedTemporalTypeException if unit isn't time based
 
     /*************************************/
     /**       DateTimeFormatter         **/
