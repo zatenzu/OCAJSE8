@@ -5,5 +5,5 @@ package be.zatenzu.oca.js8.access.defaultaccess;
  */
 public class Main
 {
-
+  int x;
 }
