@@ -9,6 +9,10 @@ public class Main{
   /*
     javac be/zatenzu/oca/js8/development/Main.java
     Compile the class et create be/zatenzu/oca/js8/development/Main.class file in the current directory
+
+    javac Main.java (Main.java is in be.zatenzu package but not in a be/zatenzu/ directory)
+    it compiles fine and creates Main.class in the current directory but if you try to run java Main, the
+    class will not found. You must put Main.class in a be/zatenzu/ directory and call java be.zatenzu.Main
   */
 
   /** java [options] class [args] **/
