@@ -106,17 +106,27 @@ public class Main{
     /** Arrays.sort(T[] t, Comparator c) **/
 
     /** List<T> java.util.Arrays.asList(T[] t) **/
-    String[] myStringsTab = {"1", "2", "3"};
-    List<String> motherList = java.util.Arrays.asList(myStringsTab);
-    //the returned list is backed to the original array!!
-    //backed list has a fixed size!
-    //motherList.remove(0);//UnsupportedOperationException
-    motherList.set(0, "zero");//ok
-    System.out.println(motherList);
-    System.out.println(myStringsTab[0]);
+    //the returned list is backed to the original array
+    String [] alphaArray = {"A", "B", "C", "D"};
+    List<String> alphaList = Arrays.asList(alphaArray);
+
+    System.out.println("Without update");
+    System.out.println(Arrays.toString(alphaArray));
+    System.out.println(alphaList);
+    System.out.println("With update on list");
+    alphaList.set(0, "Z");
+    System.out.println(Arrays.toString(alphaArray));
+    System.out.println(alphaList);
+    //both are updated
+    System.out.println("With update on list");
+    alphaArray[0] = "A";
+    System.out.println(Arrays.toString(alphaArray));
+    System.out.println(alphaList);
+    //both are updated
 
     /** toString */
     System.out.println(new String[]{"1", "2", "3"});//[Ljava.lang.String;@74a14482
+    System.out.println(Arrays.toString(new String[]{"1", "2", "3"}));//[1, 2, 3]
   }
 
   private static void test(int[] tab){}
