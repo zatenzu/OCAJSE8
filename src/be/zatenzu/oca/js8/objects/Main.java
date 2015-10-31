@@ -26,8 +26,9 @@ public class Main{
   /** finalize */
   @Override
   protected void finalize() throws Throwable{
-    //May be called when the gc collect this object
-    //Never be called a second time
+    //Called when the gc collect this object
+    //Never be called a second time for an instance
+    //finalize could not be called iuf the program ends before
   }
 
 }
