@@ -49,5 +49,11 @@ public class MyClass
     // /!\ It doesn't work with array!
     //Arrays are objects!!!
 //    long[] myTaba = (long[])new int[2];
+
+    /** Compile-time or runtime time? */
+    //casting numeric constant -> compile time
+    int iCompile = (int) 'a';
+    //casting primitive var to primitive -> runtime
+    short sRunTime = (short)iCompile;
   }
 }
