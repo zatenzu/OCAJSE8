@@ -27,6 +27,25 @@ public class ArrayLists{
     new ArrayList<>(new ArrayList<>());
 
     /*************************************/
+    /** Initialization                  **/
+    /*************************************/
+    //legal
+    /*
+      List myListIniti = new ArrayList<>();
+      List myListIniti = new ArrayList();
+      List myListIniti = new ArrayList<Object>();
+      List<Object> myListIniti = new ArrayList<>();
+      List<Object> myListIniti = new ArrayList();
+      List<Object> myListIniti = new ArrayList<Object>();
+    */
+
+    //illegal
+    /*
+      List<> myListIniti = new ArrayList<>();
+      List<> myListIniti = new ArrayList<Object>();
+    */
+
+    /*************************************/
     /** Methods                         **/
     /*************************************/
     /** public boolean add(E element) */
