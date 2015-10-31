@@ -24,6 +24,7 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
   static final boolean myVarBis;
   static{myVarBis = true;}
   In the main method, it's not allowed to initialize static blank final, it's too late
+  In a non-static context, compilation error
   */
   public _Final(){
     /**
