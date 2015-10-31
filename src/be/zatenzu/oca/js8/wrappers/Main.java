@@ -127,5 +127,14 @@ public class Main{
     System.out.println(myIntWrapper == myIntWrapperBis);//false!!!
     //because myIntWrapperBis ++ --> unwrap it, increment it and rewrap it (new instance).
     System.out.println("=======   =======");
+
+    /** Wrappers and primitives */
+    //can assign directly primitive to his wrapper
+    Integer i = 1;
+    //i = (byte) 2;//not an other wrapper
+
+    //can assign wrapper to his primitive
+    int ii = new Integer(0);
+    //short s = (short)new Integer(0);//not an other primitive
   }
 }
