@@ -16,7 +16,7 @@ public class Main{
     //only with:
     // byte, short, char, int and their wrappers
     // String and enum
-    // compiled final var!
+    // compiled final var! 1*1, (int) 'A', ect ... are compiled final var
 
 
     //empty statement is allowed
