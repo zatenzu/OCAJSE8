@@ -5,6 +5,7 @@ package be.zatenzu.oca.js8.varargs;
  */
 public class Varargs{
 
+  /** Declaration */
   /*  Legal */
 //  public void myMethod(){};
   public void myMethod(String... args)
@@ -20,7 +21,6 @@ public class Varargs{
   public void myMethod(String... args, int a){};//var-args must be the last parameter
   public void myMethod(String... args, int... as){};//Only one var-args parameter
   */
-
 
   /*public void myMethod(String[] args)
   {
