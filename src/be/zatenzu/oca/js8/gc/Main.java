@@ -14,6 +14,10 @@ public class Main{
     // - Objects who are no references
     // - References gone out of scope
 
+    //finalize is called when the object is eligible for gc
+    //the program can end before finalize is executed!
+    //so finalize could not be called.
+
   }
 
 }
