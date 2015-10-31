@@ -14,11 +14,11 @@ public class Constructor
    * as the first statement of the constructor.
    *
    * - If the parent doesn't have a no-argument constructor and the child doesn't define any constructors,
-   * the compiler will throw an error and try to insert a default no-argument constructor into the child class
+   * the compiler will throw an error on the child class declaration line because it tries to insert a default
+   * no-argument constructor into the child class
    *
    * - If the parent doesn't have a no-argument constructor, the compiler requires an explicit call to a parent
-   * constructor in each child constructor.
-   *
+   * constructor in each child constructor. (compilation error on the conctructor line declaration if it doesn't do that)
    *
    * Default constructor is the constructor provided by the compilator.
    * If you write MyClass(){}, it's not a default constructor.
