@@ -44,7 +44,8 @@ public class _Break
       case 1:{System.out.println("Take 1 break!");}break;//outside the braces
       case 2:{System.out.println("Take 2 break!");break;}
       default:{System.out.println("Take default break!");break;}
-    }    
+    }
+    //case with the same value two times -> compilation error on both cases.
     
   //loop statements
   ////for, while and do while
