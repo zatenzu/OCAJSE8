@@ -10,13 +10,16 @@ import java.util.List;
 public class Main{
 
   public static void main(String[] args){
-    /** Array:
+    /** Array rules:
      * - is an object
      * - is ordered
      * - isn't sorted
      * - has a fixed size
      * - is mutable
+     * - it's not var args but cannot declare overloaded method with array and var args
      */
+
+    /** declaration */
     int[] tab;
     int[] tabA[];//two dimensional array
     int tabB[];
@@ -41,9 +44,6 @@ public class Main{
 //    ic = {1,2,3};//array initializer can only use at var declaration
     //
     int[] id = {1,2,3,};//last , is useless but legal, size is 3 not 4!
-    //but
-//    test({0,0});array initializer is not allowed when method call
-    test(new int[]{1,1,1});
 
     int[][] twoDimensionsTab = new int[2][];//size for the second dimension is not required!!!!
     int[][] twoDimensionsTab2 = new int[][]{{1,2,3},{1,2,3}};
@@ -67,6 +67,14 @@ public class Main{
     twoDimArray[0][0] = 0;
     //twoDimArray[0,0] = 0; -> not like that!
 
+    /** method call */
+//    test({0,0});array initializer is not allowed at method call
+    //but
+    test(new int[]{1,1,1});
+
+    //cannot be used like var args argument
+    //test(1, 2, 3);
+
     /** equals, == and Arrays.equals() **/
     int[] equalsArray1 = new int[]{1};
     int[] equalsArray2 = new int[]{1};
@@ -86,6 +94,13 @@ public class Main{
     subClassArray = (SubClass[])motherArray;//ok upcasting required.
     //if the array contains an object which cannot be cast to -> ClassCastException
 
+    // primitive array casting is allowed
+    int[] intTabA = new int[1];
+    int[] intTabB = new int[1];
+    intTabA = (int[]) intTabB;
+    //but short[] instance can never be a int[]!
+//    short[] shortTabA = new short[0];
+//    intTabA = (int[]) shortTabA;
 
     /** Widening doesn't work with array type*/
 //    double[] doubleArray = new float[2];
@@ -105,7 +120,7 @@ public class Main{
     //T must implement comparable interface
     /** Arrays.sort(T[] t, Comparator c) **/
 
-    /** List<T> java.util.Arrays.asList(T[] t) **/
+    /** List<T> java.util.Arrays.asList(T... t) **/
     //the returned list is backed to the original array
     String [] alphaArray = {"A", "B", "C", "D"};
     List<String> alphaList = Arrays.asList(alphaArray);
