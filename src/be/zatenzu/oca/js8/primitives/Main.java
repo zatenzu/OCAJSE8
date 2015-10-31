@@ -67,6 +67,7 @@ public class Main{
     //It use to declared a 32-bit signed floating point value.
     //default value 0.0
     //It use to declared a numeric variable from 1.4E-45 to 3.4028235E38
+    f = 1.00f;
 
     /** long **/
     //It use to declared a 64-bit signed integer.
