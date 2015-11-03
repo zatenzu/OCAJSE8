@@ -111,6 +111,12 @@ public class Main{
     /** == **/
     //This operator with wrapper compare the primitive value of wrapper
 
+    /** equals **/
+    System.out.println(new Long(0L).equals(0));//false
+    //because 0 is boxed to Integer, Integer ! instance of Long
+    System.out.println(new Long(0L).equals(0L));//true
+    //0L is boxed to Long
+
     /** WRAPPER OBJECTS ARE IMMUTABLE !!! **/
     System.out.println("=======IMMUTABLE=======");
     Integer myIntWrapper = new Integer(1234);
@@ -130,11 +136,11 @@ public class Main{
 
     /** Wrappers and primitives */
     //can assign directly primitive to his wrapper
-    Integer i = 1;
+    Integer i = 1;//autoboxing
     //i = (byte) 2;//not an other wrapper
 
     //can assign wrapper to his primitive
-    int ii = new Integer(0);
+    int ii = new Integer(0);//auto unboxing
     //short s = (short)new Integer(0);//not an other primitive
   }
 }
