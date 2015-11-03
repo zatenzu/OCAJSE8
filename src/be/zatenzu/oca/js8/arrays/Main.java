@@ -16,7 +16,8 @@ public class Main{
      * - isn't sorted
      * - has a fixed size
      * - is mutable
-     * - it's not var args but cannot declare overloaded method with array and var args
+     * - it's not var args but cannot declare overloaded method with array and var args and you can override a method
+     * with varargs parameter with a method with array and vice versa
      */
 
     /** declaration */
@@ -121,7 +122,7 @@ public class Main{
     /** Arrays.sort(T[] t, Comparator c) **/
 
     /** List<T> java.util.Arrays.asList(T... t) **/
-    //the returned list is backed to the original array
+    //the returned list is BACKED to the original array
     String [] alphaArray = {"A", "B", "C", "D"};
     List<String> alphaList = Arrays.asList(alphaArray);
 
@@ -138,6 +139,9 @@ public class Main{
     System.out.println(Arrays.toString(alphaArray));
     System.out.println(alphaList);
     //both are updated
+
+    //backed list has fixed size, cannot modify it!
+//    alphaList.remove(0);//java.lang.UnsupportedOperationException
 
     /** toString */
     System.out.println(new String[]{"1", "2", "3"});//[Ljava.lang.String;@74a14482
