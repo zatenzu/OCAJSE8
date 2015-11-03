@@ -22,7 +22,7 @@ public class CommonExceptions{
   //UnsupportedTemporalTypeException, extends DateTimeException
   //DateTimeParseException, extends DateTimeException
 
-  //IllegalArgumentException
+  //IllegalArgumentException (only by programmer)
 
   //NullPointerException
 
@@ -34,6 +34,7 @@ public class CommonExceptions{
 
   //NoSuchElementException
   //iterator.next when hasNext() return false;
+
   /** Exception */
   //FileNotFoundException -> reference to a non-existing file
   //extends IOException
