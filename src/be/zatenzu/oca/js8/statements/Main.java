@@ -24,9 +24,11 @@ public class Main{
     }
     else{
     }
+    for(int i = 0 ; i < 9 ; i ++){}
 
     /** do while */
     do{}while(true);//; is required!
+
   }
 
 }
