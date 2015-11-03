@@ -3,11 +3,12 @@ package be.zatenzu.oca.js8.main;
 class Main{
 
   /* legal main declarations */
-//  public static void main(String[] args){System.out.println("Hello world from non public class");}
-//  public static void main(String args[]){System.out.println("Hello world from non public class");}
-//  static public void main(String... args){System.out.println("Hello world from non public class");}
-//  public static void main(String abbalblalba[]){System.out.println("Hello world from non public class");}
-//  public static void main(String abbalblalba[]) throws Exception {System.out.println("Hello world from non public class");}
+//  public static void main(String[] args){System.out.println("Hello world");}
+//  public static void main(String args[]){System.out.println("Hello world");}
+//  static public void main(String... args){System.out.println("Hello world");}
+//  public static void main(String abbalblalba[]){System.out.println("Hello world");}
+//  public static void main(String abbalblalba[]) throws Exception {System.out.println("Hello world");}
+//  public static final void main(String abbalblalba[]) throws Exception {System.out.println("Hello world");}
 
   /* illegal main declarations */
 //  static void main(String[] args){}//must be public
