@@ -8,9 +8,9 @@ public class Numeric{
   public static void main(String[] args){
     /** base **/
     System.out.println(56);//decimal 56 base 10
-    System.out.println(0b11);//binary 3 base 2
-    System.out.println(017);//octal 15 base 8
-    System.out.println(0x1F);//hexadecimal 31 base 16
+    System.out.println(0b11);//binary 3 base 2 (0b)
+    System.out.println(017);//octal 15 base 8 (0)
+    System.out.println(0x1F);//hexadecimal 31 base 16 (0x)
 
     /** _ **/
     //legal
