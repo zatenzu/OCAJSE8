@@ -16,13 +16,12 @@ public class Main{
    * - See removeIf method from ArrayList
    */
 
-  //(Personne p) -> {return p.getAge() > 30;}
-  //or
-  //p -> p.getAge() > 30
-//  if {} then return(if functional method return something) and ; are required
+  // p -> p.getAge() > 30
+  // (p) -> p.getAge() > 30
+  // (Personne p) -> p.getAge() > 30//if parameter type is defined, () are required
+  // (Personne p) -> {return p.getAge() > 30;}
 
-  //if parameter type is defined, () are required
-//  (Personne p) -> p.getAge() > 30
+//  if {} then return(if functional method return something) and ; are required
 
   //if no parameter
 //  () -> true
