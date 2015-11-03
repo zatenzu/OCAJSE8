@@ -11,7 +11,7 @@ public class Main{
   // - When the question is: "are they equal?" equal means equals() not ==
   // - If something is required, it's allowed too.
   // - Warning to implicit things, mainly interface (everything is public)
-  // - new and abstract 
+  // - new and abstract
 
   /** Vocabulary **/
   //- lenient: indulgent
