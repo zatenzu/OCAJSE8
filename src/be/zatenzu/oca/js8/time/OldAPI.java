@@ -10,8 +10,8 @@ public class OldAPI
 {
   public static void main(String[] args)
   {
-      /*************************************/
-     /**  java.util.Date                 **/
+      /***********************************/
+     /**  java.util.Date                 */
     /*************************************/
     /** Constructors **/
     //public Date()
@@ -23,8 +23,8 @@ public class OldAPI
     //Long getTime();
     System.out.println(now.getTime());//get Date as milliseconds from 01/01/1970 
     
-      /*************************************/
-     /**  java.util.Calendar             **/
+      /***********************************/
+     /**  java.util.Calendar            **/
     /*************************************/
     /** Constructors **/
     Calendar cNow = Calendar.getInstance();//now
