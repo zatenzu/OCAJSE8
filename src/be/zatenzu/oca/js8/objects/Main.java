@@ -28,7 +28,7 @@ public class Main{
   protected void finalize() throws Throwable{
     //Called when the gc collect this object
     //Never be called a second time for an instance
-    //finalize could not be called iuf the program ends before
+    //finalize could not be called if the program ends before
   }
 
 }
