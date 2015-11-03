@@ -3,7 +3,7 @@ package be.zatenzu.oca.js8.varargs;
 /**
  * Created by tda on 11/08/2015.
  */
-public class Varargs{
+public class Varargs extends MotherClass{
 
   /** Declaration */
   /*  Legal */
@@ -26,6 +26,11 @@ public class Varargs{
   {
     System.out.println(args.length);
   };*==> Already defined!*/
+
+  @Override
+  public void methodWithVarargs(int... varargs){
+    super.methodWithVarargs(varargs);
+  }
 
   public static void main(String[] args){
     Varargs varargs = new Varargs();
