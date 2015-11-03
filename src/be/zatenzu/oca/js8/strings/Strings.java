@@ -12,6 +12,16 @@ public class Strings{
   public static void main(String[] args){
 
     /*************************************/
+    /** Constructor                     **/
+    /*************************************/
+    new String();
+    new String("");
+    new String(new StringBuilder());
+    new String(new StringBuffer());
+    //...TODO
+
+
+    /*************************************/
     /** Concatenation                   **/
     /*************************************/
     int r = 4;
