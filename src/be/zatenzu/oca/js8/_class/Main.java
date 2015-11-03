@@ -14,7 +14,7 @@ public class Main{
    * Only public, default package, abstract and final!
    *
    */
-  public void myMethod(){}//; not require
+  public void myMethod(){}//; not require because there is a body. Abstract method required ;
 //  void public myMethod(){}//; return type before access is forbidden
   final public void myMethod3(){}//final, abstract or static can be before access
 }
