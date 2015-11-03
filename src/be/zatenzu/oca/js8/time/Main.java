@@ -94,6 +94,7 @@ public class Main{
     /** public static LocalDate parse(CharSequence charSeq) throw DateTimeParseException */
     LocalDate.parse("1986-05-01");
     //the string must be a date in ISO format
+    /** public static LocalDate parse(CharSequence charSeq, DateTimeFormatter dtf) throw DateTimeParseException */
 
     /** public static LocalDate parse(CharSequence charSeq, DateTimeFormatter formatter)*/
     DateTimeFormatter formatterA = DateTimeFormatter.ofPattern("ddMMyyyy HH:mm:ss");
