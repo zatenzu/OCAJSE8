@@ -20,6 +20,16 @@ package be.zatenzu.oca.js8._interface;
  */
 public /**abstract (implicit) **/ interface _Interface
 {
+  /*
+  static {
+    System.out.println("Static blocks are forbidden in interface");
+  }
+  {
+    System.out.println("Blocks are forbidden in interface");
+  }
+  */
+
+
   /**  interface variables are always constants so public static final are implicit!!**/
   /** only public, static final, nothing else **/
   public static final int MY_CONST = 1;
