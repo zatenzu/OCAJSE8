@@ -17,19 +17,23 @@ public class ArrayLists{
      *  - Isn't sorted
      *  - Has a non fixed size
      *  - Is mutable
+     *  - in java.util package (/!\ import)
      */
 
     /*************************************/
     /** Constructors                    **/
     /*************************************/
+    /** public ArrayList() */
     new ArrayList<>();
+    /** public ArrayList(int initialCapacity) */
     new ArrayList<>(1);
+    /** public ArrayList(Collection c) */
     new ArrayList<>(new ArrayList<>());
 
     /*************************************/
     /** Initialization                  **/
     /*************************************/
-    //legal
+    /** legal */
     /*
       List myListIniti = new ArrayList<>();
       List myListIniti = new ArrayList();
@@ -39,7 +43,7 @@ public class ArrayLists{
       List<Object> myListIniti = new ArrayList<Object>();
     */
 
-    //illegal
+    /** illegal */
     /*
       List<> myListIniti = new ArrayList<>();
       List<> myListIniti = new ArrayList<Object>();
