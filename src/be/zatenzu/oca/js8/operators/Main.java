@@ -60,10 +60,5 @@ public class Main{
     System.out.println(i);
     //conclusion
     //(i = i++) != (i = i + 1)
-
-    String t = "";
-//    String s = 250 > 380 ? "Lion" : t = "Tiger";
-    String s = 250 > 380 ? "Lion" : (t = "Tiger");
-    //because assignment operator < ternary operator
   }
 }
