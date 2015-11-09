@@ -77,6 +77,18 @@ public class Main{
     localDate = localDate.minusYears(1);
     System.out.println(localDate);
 
+    /** public LocalDate minus(java.time.temporal.TemporalAmount amountToSubtract) **/
+    localDate.minus(Period.of(1, 1, 1));
+
+    /** public LocalDate minus(long amountToSubtract, java.time.temporal.TemporalUnit unit) **/
+    localDate.minus(3L, ChronoUnit.DAYS);
+
+    /**public LocalDate plus(java.time.temporal.TemporalAmount amountToAdd) **/
+    localDate.plus(Period.of(1, 2, 2));
+
+    /** public LocalDate plus(long amountToAdd, java.time.temporal.TemporalUnit unit) **/
+    localDate.plus(3L, ChronoUnit.DAYS);//if ChronoUnit.HOURS --> UnsupportedTemporalTypeException because no hours in localDate
+
     /** public boolean isBefore(LocalDate otherDate) */
     //return true if the date is before the otherDate
     localDate.isBefore(LocalDate.now());
