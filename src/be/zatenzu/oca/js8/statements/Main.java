@@ -6,12 +6,6 @@ package be.zatenzu.oca.js8.statements;
 public class Main{
 
   public static void main(String[] args){
-    /** ternary operator  */
-    boolean b = true ? true : false;// boolean expression ? if the expression is true : if the expression is false
-    /* double ternary operator  */
-    boolean bb = true ? true ? true : false : false;
-    //short circuit!
-
     /** switch */
     //only with:
     // byte, short, char, int and their wrappers
