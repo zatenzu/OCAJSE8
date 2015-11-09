@@ -14,12 +14,17 @@ public class Strings{
     /*************************************/
     /** Constructor                     **/
     /*************************************/
+    /** public String() */
     new String();
-    new String("");
-    new String(new StringBuilder());
-    new String(new StringBuffer());
-    //...TODO
 
+    /** public String(String original) */
+    new String("");
+
+    /** public String(StringBuilder builder) */
+    new String(new StringBuilder());
+
+    /** public String(StringBuffer buffer) */
+    new String(new StringBuffer());
 
     /*************************************/
     /** Concatenation                   **/
