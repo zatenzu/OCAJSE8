@@ -21,6 +21,9 @@ import java.lang.*;// -> useless, this package is auto imported in each classes
 import be.zatenzu.oca.js8.iimport.packageA.*;
 import be.zatenzu.oca.js8.iimport.packageB.A;
 
+//if two wild cards, A must be imported explicitly
+//import be.zatenzu.oca.js8.iimport.packageA.*;
+//import be.zatenzu.oca.js8.iimport.packageB.*;
 
 public class Main{
   A a;
