@@ -1,9 +1,13 @@
 package be.zatenzu.oca.js8.varargs;
 
+import java.util.List;
+
 /**
  * Created by tda on 11/08/2015.
  */
 public class Varargs extends MotherClass{
+
+  private static List<Object> myList;
 
   /** Declaration */
   /*  Legal */
@@ -38,5 +42,21 @@ public class Varargs extends MotherClass{
     varargs.myMethod(new String[1]);
     varargs.myMethod();//print 0 because java create an empty array to call myMethod! Big trap!
 //    varargs.myMethod(null);//varargs '=' array '=' Object
+
+//    System.out.println("tmp");
+    getParameter(1, 2, 3);//Integer[]
+    getParameter(1, 2, 3.0);//Number[]
+    getParameter(1, 2, 3L);//Number[]
+    getParameter(1F, 2F, 3.0);//Number[]
+    getParameter(1, 2, "3");//Serializable[]
+    getParameter(new Varargs(), new MotherClass());//MotherClass[]
+    getParameter(new String(), new StringBuilder());//MotherClass[]
+    getParameter(new String(), null);//String[]
+    getParameter(null, null);//Object[]
   }
+
+  public static <T> Object getParameter(T... t){
+    return t;
+  }
+
 }
