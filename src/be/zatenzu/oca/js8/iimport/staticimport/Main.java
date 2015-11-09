@@ -17,7 +17,7 @@ public class Main{
  * RULES:
  *
  * - Can only import static members from an other class or interface
- * - Can only import visible static members
+ * - Can only import visible static members but no compilation error on the import line
  * - Cannot import more than one static methods with the same signature -> Compilation error
  * - Cannot import more than one static fields that have the same name -> Compilation error
  */
