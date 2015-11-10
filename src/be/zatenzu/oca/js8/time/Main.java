@@ -289,9 +289,22 @@ public class Main{
     //Return the period as string
     System.out.println(Period.of(1, 2, 3));//P1Y2M3D
 
+    /** public int getDays() **/
+    p.getDays();
+
+    /** public int getMonths() **/
+    p.getMonths();
+
+    /** public int getYears() **/
+    p.getYears();
+
+    /** public long get(java.time.temporal.TemporalUnit unit) **/
+    p.get(ChronoUnit.DAYS);
+
     /*************************************/
     /**       Duration                  **/
     /*************************************/
+    // ! in 1Z0-808
     // time based
     Duration.of(0L, ChronoUnit.HOURS); //can throw UnsupportedTemporalTypeException if unit isn't time based
 
