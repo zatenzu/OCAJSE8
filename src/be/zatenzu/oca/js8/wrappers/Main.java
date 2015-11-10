@@ -20,13 +20,12 @@ public class Main{
     new Boolean(true);
     //// public Boolean(String s)
     new Boolean("true");//call the parseBoolean method
-    //public boolean booleanValue()
-    Boolean booleanWrapper = new Boolean(true);
-    booleanWrapper = new Boolean("true");
 
+    //public boolean booleanValue()
+    Boolean booleanWrapper = new Boolean("true");
     booleanWrapper.booleanValue();
     //public static boolean parseBoolean(String s)
-    Boolean.parseBoolean("true");//true if !null and equalsIgnoreCase("true")
+    Boolean.parseBoolean("true");//true if !null and equalsIgnoreCase("true"). No NFE!! just return false!
     //public static Boolean valueOf(String s)
     Boolean.valueOf("true");//true if !null and equalsIgnoreCase("true")
     //public static Boolean valueOf(boolean b)
