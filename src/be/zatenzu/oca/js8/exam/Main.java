@@ -12,6 +12,8 @@ public class Main{
   // - If something is required, it's allowed too.
   // - Warning to implicit things, mainly interface (everything is public)
   // - new and abstract
+  // - I M P O R T ! ! ! java.util.ArrayList, java.util.function.Predicate, java.time,etc ...
+  // if the code shows line numbers from 1. Check imports!
 
   /** Vocabulary **/
   //- lenient: indulgent
