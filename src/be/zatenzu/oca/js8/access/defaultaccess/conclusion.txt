@@ -1,4 +1,4 @@
-default (package)
-====================
+default (package) package private access
+========================================
 look at the position where you are. If you are in the same package as what you want to access
 and you are in the same package as the instance that you use to access of what you want, it's ok!
