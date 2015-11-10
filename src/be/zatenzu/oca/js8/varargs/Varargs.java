@@ -39,7 +39,7 @@ public class Varargs extends MotherClass{
   public static void main(String[] args){
     Varargs varargs = new Varargs();
     varargs.myMethod("1", "2");//it's varargs
-    varargs.myMethod(new String[1]);
+    varargs.myMethod(new String[1]);//can take an array
     varargs.myMethod();//print 0 because java create an empty array to call myMethod! Big trap!
 //    varargs.myMethod(null);//varargs '=' array '=' Object
 
