@@ -68,6 +68,8 @@ public class Main{
     //default value 0.0
     //It use to declared a numeric variable from 1.4E-45 to 3.4028235E38
     f = 1.00f;
+    f = 2;
+//    f = 2.0;
 
     /** long **/
     //It use to declared a 64-bit signed integer.
@@ -85,6 +87,7 @@ public class Main{
     //default value 0.0d
 
     double d = -23.23;//by default floating point numbers are double!
+    d = 2;
     double dd = 23.23D;//D is implicit
     double ddd = 23.23d;//d is implicit
 //    double ddddd = 23,23d;//not dot but comma dont compile

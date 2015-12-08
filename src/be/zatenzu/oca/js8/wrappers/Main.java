@@ -11,6 +11,7 @@ public class Main{
      **/
 
     /** All parseXxxxx(String s) and valueOf(String s) throw NumberFormatException expected boolean **/
+    //never throws NPE! null = NFE
 
     /** All wrappers have a constructor with s String (Character excepted). This constructor call parseXxxx(String s) static method **/
 
@@ -41,6 +42,7 @@ public class Main{
     Byte.parseByte("-1");//- or + and all decimal digit
     //public static Byte valueOf(String s)
     Byte.valueOf("1");//- or + and all decimal digit
+//    Byte.valueOf(null);//no NPE but NFE
     Byte.valueOf(b1);
 
     /** Short */
@@ -108,13 +110,14 @@ public class Main{
 
 
     /** == **/
-    //This operator with wrapper compare the primitive value of wrapper
+    //compare object reference, not primitive value
 
     /** equals **/
     System.out.println(new Long(0L).equals(0));//false
     //because 0 is boxed to Integer, Integer ! instance of Long
     System.out.println(new Long(0L).equals(0L));//true
     //0L is boxed to Long
+    System.out.println(new Integer(0).equals(new Long(0)));//false
 
     /** WRAPPER OBJECTS ARE IMMUTABLE !!! **/
     System.out.println("=======IMMUTABLE=======");

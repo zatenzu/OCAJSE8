@@ -43,8 +43,8 @@ public class MyClass
     //legal but all values after . are lost
     
     byte maximum = 127;
-    byte moreAsMax = (byte)128;//legal with casting
-    System.out.println(moreAsMax);//-->result is -128
+    byte moreThanMax = (byte)128;//legal with casting
+    System.out.println(moreThanMax);//-->result is -128
 
     // /!\ It doesn't work with array!
     //Arrays are objects!!!

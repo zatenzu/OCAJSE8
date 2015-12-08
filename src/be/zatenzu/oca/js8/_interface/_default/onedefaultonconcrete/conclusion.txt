@@ -1,3 +1,3 @@
-If a class (abstract or not) or an interface inherits one default method and a concrete methode  with the same signature,
+If a class (abstract or not) or an interface inherits one default method and on abstract method with the same signature,
 this class or interface must override the method with a abstract or concrete method.
 If it doesn't do that -> Compilation error.

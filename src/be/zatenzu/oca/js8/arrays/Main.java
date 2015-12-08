@@ -49,7 +49,7 @@ public class Main{
     int[][] twoDimensionsTab = new int[2][];//size for the second dimension is not required!!!!
     int[][] twoDimensionsTab2 = new int[][]{{1,2,3},{1,2,3}};
 
-    int i = new int[]{1,2,3}[1];
+    int i = new int[]{1,2,3}[1];//i=2
 //  int[] ii = new int[1]{1,2,3};cannot specify the size two times
 
     int[] a = new int[5];
@@ -68,6 +68,8 @@ public class Main{
     twoDimArray[0][0] = 0;
     //twoDimArray[0,0] = 0; -> not like that!
 
+//    String[] k = new String[-1];//negative size compiles but throws exception at runtime
+
     /** method call */
 //    test({0,0});array initializer is not allowed at method call
     //but
@@ -82,7 +84,8 @@ public class Main{
     System.out.println("==:" + (equalsArray1 == equalsArray2));//false
     System.out.println("equals:" + equalsArray1.equals(equalsArray2));//false because return this == obj
     System.out.println("Arrays.equals:" + Arrays.equals(equalsArray2, equalsArray2));//true
-    //Arrays.equals() take 2 primitive arrays of the same type or 2 object arrays! int[] never be equals to Integer[]
+    //Arrays.equals() takes 2 primitive arrays of the same type or 2 object arrays! int[] never be equals to Integer[]
+    Arrays.equals((Object[])null,(Object[])null);//true
 
     /** Array casting **/
     //follow usual rules of casting

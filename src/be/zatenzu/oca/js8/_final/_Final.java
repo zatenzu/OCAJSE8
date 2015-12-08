@@ -13,7 +13,7 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
 {
   //Cannot extends a final class. If you do that -> compiler error !!!
   
-  //A final instance variable who isn't defined at the declaration point is called 'blank final' variable
+  //A final instance variable who isn't defined at the declaration point (or in an anonymous bloc) is called 'blank final' variable
   //must be initialized in each constructors
   final boolean myVar;
   //A static 'blank final' instance variable must be initialized in the static bloc code where it is declared
@@ -101,7 +101,7 @@ public final class _Final extends Class1 //extends MyFinalClass --> Forbidden!!!
      */
     final int[] myTab = {1,2,3};
     myTab[2] = 4;// OK because the array content value is modified, not the reference
-    //myTab = {3,2,1};// forbidden, the reference is modified
+    //myTab = new int[]{3,2,1};// forbidden, the reference is modified
     
     //final and anonymous inner class
     final String s = new String("myString");

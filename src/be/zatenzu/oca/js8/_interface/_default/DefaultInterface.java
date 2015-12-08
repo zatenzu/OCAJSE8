@@ -10,7 +10,8 @@ public interface DefaultInterface{
    * - A default method must be marked with the default keyword. If a method is marked as default, it must provide a method body.
    * - A default method is not assumed to be static, final, or abstract, as it may be used or overridden by a class that implements the interface.
    * - Like all methods in an interface, a default method is assumed to be public and will not compile if marked as private or protected.
-   * - If a class implements two interfaces that have default methods with the same signature, the compiler will throw an error
+   * - If a class implements two interfaces that have default methods with the same signature, the compiler will throw an error if the class
+   * doesn't override it.
    * - If a class or interface inherits a abstract and a default method with the same signature in the same time, the compiler will throw an error
    * (@see:tests.intro.q16)
    * - If a interface has 1 or more default method(s) but only one abstract method, it's a functional interface)

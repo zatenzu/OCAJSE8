@@ -9,6 +9,8 @@ public class Main{
     //call the garbage collector
     //no guaranteed to run!
     System.gc();
+    //or
+    Runtime.getRuntime().gc();
 
     /** Eligible objects for gc are **/
     // - Objects who are no references

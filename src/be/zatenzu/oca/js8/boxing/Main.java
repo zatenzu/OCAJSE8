@@ -22,7 +22,6 @@ public class Main{
     double d = doubleList.remove(0);//unboxes Double to double
     doubleList.add(null);
     d = doubleList.get(0);//unboxes null to double --> NPE
-
   }
 
 }

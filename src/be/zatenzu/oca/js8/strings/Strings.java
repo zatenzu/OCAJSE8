@@ -133,9 +133,9 @@ public class Strings{
     /**********************************/
     /** Sorted                      **/
     /*********************************/
-    List<String> arrayOfChar = Arrays.asList("-","1","a","A", "€", "#", "@");
+    List<String> arrayOfChar = Arrays.asList("-","1", "3A", "33", "40", "a","A", "€", "#", "@");
     Collections.sort(arrayOfChar);
-    System.out.println(arrayOfChar);//#,-,1,A,a,€
+    System.out.println(arrayOfChar);//#,-,1,33,3A,40,A,a,€
     //number before letter
     //Uppercase letter before lowercase letter
   }

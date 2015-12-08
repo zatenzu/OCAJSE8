@@ -11,6 +11,7 @@ public class _Break
     //switch statement
     System.out.println("Switch with break");
     int i = 1;
+    final int z = 3;
     
     switch(i){
       case 0:
@@ -22,6 +23,8 @@ public class _Break
       case 2:
         System.out.println("Take 2 break!");
         break;
+      case z://ok z is a compiled final var
+        //but if final int z; z = 3; z isn't compiled final var
     }
     
     System.out.println("Switch without break");

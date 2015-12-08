@@ -52,6 +52,8 @@ public class Main{
 
   /** Initialization **/
   //local variable must initialized before use it.
+  //compilation error on the line where you use the non-initialized var
+  //and not on the declaration line
   public int myMethodeA(){
     int x;
     int y = 2;

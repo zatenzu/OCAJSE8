@@ -11,9 +11,9 @@ public class CommonExceptions{
   /** RuntimeException */
   //ArithmeticException -> divide by zero
 
-  //ArrayIndexOutOfBoundsException
+  //ArrayIndexOutOfBoundsException -> throws by JVM
 
-  //ClassCastException
+  //ClassCastException -> throws by JVM
   String type = "moose";
   Object obj = type;
   Integer number = (Integer) obj;
@@ -24,10 +24,10 @@ public class CommonExceptions{
 
   //IllegalArgumentException (only by programmer)
 
-  //NullPointerException
-
   //NumberFormatException extends IllegalArgumentException (only by programmer)
   //parseXxxxx(String s) and valueOf(String s) (@see wrappers)
+
+  //NullPointerException -> throws by JVM
 
   //UnsupportedOperationException
   //When an unauthorized operation is done. example: remove on a backed list
@@ -81,7 +81,7 @@ public class CommonExceptions{
   //catch rules
   public static void main(String[] args){
     try{
-      System.out.println("Hellow world");
+      System.out.println("Hello world");
     }
     catch(IndexOutOfBoundsException e){}
     catch(RuntimeException e){}

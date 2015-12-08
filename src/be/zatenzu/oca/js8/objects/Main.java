@@ -20,7 +20,11 @@ public class Main{
     //Wrappers
     Integer i = new Integer(0);
     Integer ii = new Integer(0);
-    System.out.println(ii == i);//true because wrappers compare its primitive value
+    Number sh = new Short((short)0);
+    Short sht = new Short((short)0);
+    System.out.println(i == ii);//false compare object reference
+    System.out.println(sh == i);//Number is not a wrapper, compares references
+//    System.out.println(sht == i);//doesn't compile because you cannot compare reference of Short with Integer
   }
 
   /** finalize */

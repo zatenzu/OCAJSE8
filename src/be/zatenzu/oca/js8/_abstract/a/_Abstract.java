@@ -16,6 +16,7 @@ public abstract class _Abstract //or abstract public class _Abstract
    * methods as its own abstract methods
    * - The first concrete class that extends an abstract class must provide an implementation for all of the inherited
    * abstract methods
+   * - Abstract class can declare constructors
    *
    * - Abstract methods may only be defined in abstract class or interface
    * - Abstract methods may not be declared private, final or static
@@ -24,7 +25,7 @@ public abstract class _Abstract //or abstract public class _Abstract
    * */
   //only with one abstract method, and your class must be abstract too
   public abstract void myMethod();//; is required for abstract method
-  
+
   // private and abstract, forbidden
 //  private abstract void myMethod1();
   

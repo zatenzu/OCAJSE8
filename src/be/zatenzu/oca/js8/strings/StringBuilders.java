@@ -28,6 +28,7 @@ public class StringBuilders{
     /***************************************/
     StringBuilder mainString = new StringBuilder("azerty");
     /** charAt(), indexOf(), length(), substring() see Strings class */
+    /** Others String methods are not available on a StringBuilder **/
 
     /** public StringBuilder append(String s) **/
     mainString.append("ui");

@@ -24,11 +24,17 @@ public class Main{
   //you can init a var declared after the block but you cannot use its value
   //before the initialization of it.
 
-  {myStaticVar++;}
+
+  static{
+//    myStaticVar++;//illegal forward reference!
+    myStaticVar=1;
+    //    myStaticVar++;//illegal forward reference!
+  }
   static int myStaticVar = 0;
 
 
   public static void main(String[] args){
-    System.out.println(new Main().myVar);//2!
+    System.out.println(new Main().myVar);//3!
+    System.out.println(new Main().myStaticVar);//!
   }
 }

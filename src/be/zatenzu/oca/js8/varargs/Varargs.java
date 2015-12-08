@@ -8,6 +8,7 @@ import java.util.List;
 public class Varargs extends MotherClass{
 
   private static List<Object> myList;
+  //int... myvar; ->varargs var forbidden
 
   /** Declaration */
   /*  Legal */

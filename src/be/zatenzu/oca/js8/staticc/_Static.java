@@ -8,9 +8,10 @@ import java.util.Arrays;
 import static java.util.Arrays.asList;//now you can call directly asList without Arrays
 
 /**
- * Static keyword can be used on a field, method, inner class or import.
- * Static code is executed when the class is referred for the first time
- * directly or via inheritance.
+ * - Static keyword can be used on a field, method, inner class or import.
+ * - Static code is executed when the class is referred for the first time
+ * directly or via inheritance. (import this class is not enough)
+ * - Static members are inherited
  */
 public class _Static
 {

@@ -33,4 +33,9 @@ public class Main{
   // - must end with ListenerA
   // - must take 1 argument type of Listener
 
+  /** Cohesion and Coupling **/
+  //Coupling is the degree that one class knows about another
+  // - Loose coupling -> GOOD
+  //Cohesion is used to indicate the degree to which a class has single well focused purpose
+  // - Tight coupling (couplage serré) -> BAD
 }

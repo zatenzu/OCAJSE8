@@ -43,10 +43,12 @@ public class ArrayLists{
       List<Object> myListIniti = new ArrayList<Object>();
     */
 
+
     /** illegal */
     /*
       List<> myListIniti = new ArrayList<>();
       List<> myListIniti = new ArrayList<Object>();
+      List<Object> myListIniti = new ArrayList<String>();
     */
 
     /*************************************/

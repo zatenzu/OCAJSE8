@@ -16,5 +16,5 @@ public class Main{
    */
   public void myMethod(){}//; not require because there is a body. Abstract method required ;
 //  void public myMethod(){}//; return type before access is forbidden
-  final public void myMethod3(){}//final, abstract or static can be before access
+  final public void myMethod3(){}//final, abstract or static can be before access modifier
 }

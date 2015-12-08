@@ -41,6 +41,7 @@ public class Main{
     LocalDate localDate = LocalDate.now();
     localDate = localDate.plusDays(2);
     System.out.println(localDate);
+//    localDate = localDate.plusDays(-2);+-2 -> -2 days
 
     /** public LocalDate minusDays(long daysToSubtract) */
     //subtract days from date
@@ -89,9 +90,14 @@ public class Main{
     /** public LocalDate plus(long amountToAdd, java.time.temporal.TemporalUnit unit) **/
     localDate.plus(3L, ChronoUnit.DAYS);//if ChronoUnit.HOURS --> UnsupportedTemporalTypeException because no hours in localDate
 
+    /** pubic int getMonthValue() **/
+    localDate.getMonthValue();//1 to 12
+
     /** public boolean isBefore(LocalDate otherDate) */
     //return true if the date is before the otherDate
     localDate.isBefore(LocalDate.now());
+
+    /** public boolean isAfter(LocalDate otherDate) */
 
     /** public long toEpochDay() */
     //return the number of days since 1970/01/01

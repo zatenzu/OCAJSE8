@@ -5,7 +5,7 @@ package be.zatenzu.oca.js8.constructor.test;
  */
 public class A{
 
-  public A(){System.out.println("Default B");}
-  public A(String s){System.out.println("Default A");}
+  protected A(){System.out.println("Default B");}
+//  public A(String s){System.out.println("Default A");}
 
 }
