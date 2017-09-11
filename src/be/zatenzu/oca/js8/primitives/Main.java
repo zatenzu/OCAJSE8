@@ -91,6 +91,17 @@ public class Main{
     double dd = 23.23D;//D is implicit
     double ddd = 23.23d;//d is implicit
 //    double ddddd = 23,23d;//not dot but comma dont compile
+    
+    // == compare values
+    // can compare different type of primitive
+    int i = 3;
+    long l = 3L;
+    float f = 3.0f;
+    System.out.println(i == f);//true
+    System.out.println(i == l);//true
+    System.out.println(l == f);//true
+    
+    // == with a wrapper see @ wrapper package
   }
 
 }
