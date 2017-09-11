@@ -26,6 +26,7 @@ public class Main{
      - If one floating point var and a non floating point, non floating point is converted to floating point
      - Data type that are smaller than int, are converted to int when they are using with binary operator
      - The type of the result is the type of the promoted operands
+     - With a benary operator, if any operand is of a reference type, it is subjected to unboxing conversion (ex:wrapper == primitive)
      */
 
     /** compound assignment **/
