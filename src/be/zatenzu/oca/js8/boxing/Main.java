@@ -11,6 +11,20 @@ public class Main{
   public static void main(String[] args){
 
     /**
+    * Autoboxing
+    * The Java compiler applies autoboxing when a primitive value is:
+    * - Passed as a parameter to a method that expects an object of the corresponding wrapper class.
+    * - Assigned to a variable of the corresponding wrapper class.
+    **/
+    
+    /**
+    * Unboxing
+    * The Java compiler applies unboxing when an object of a wrapper class is:
+    * - Passed as a parameter to a method that expects a value of the corresponding primitive type.
+    * - Assigned to a variable of the corresponding primitive type.
+    **/
+    
+    /**
      *
      * - Autoboxing works with collections
      * - Autoboxing works with array
