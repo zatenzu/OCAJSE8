@@ -13,7 +13,7 @@ public class Constructor
    * - If no super() call is declared in a constructor, or this(), Java will insert a no-argument super()
    * as the first statement of the constructor.
    *
-   * - If the parent doesn't have a no-argument constructor and the child doesn't define any constructors,
+   * - If the parent doesn't have his default constructor and the child doesn't define any constructors,
    * the compiler will throw an error on the child class declaration line because it tries to insert a default
    * no-argument constructor into the child class
    *
