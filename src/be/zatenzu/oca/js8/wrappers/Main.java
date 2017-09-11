@@ -113,6 +113,17 @@ public class Main{
     //Wrapper == Wrapper => compare object reference, not primitive value. If not the same type, compilation error.
     //primitive == primitive => compare value (see @ primitive package)
     //primitive == Wrapper => wrapper is unboxed, compare primitive value
+    //BUT /!\
+    Integer i1 = 127;
+    Integer i2 = 127;
+    System.out.println(i1 == i2);//true
+    i1 = 128;
+    i2 = 128;
+    System.out.println(i1 == i2);//false
+    //because the jvm keep in cache -128 to 127 Integer.
+    //So, first init of i1 and i2, 127 is autoboxed but refered to the same object in memory.
+    //same thing for long values
+    //128 is out of range for the cache, so this is autoboxed to different objects.
 
     /** equals **/
     System.out.println(new Long(0L).equals(0));//false
