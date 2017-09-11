@@ -110,7 +110,9 @@ public class Main{
 
 
     /** == **/
-    //compare object reference, not primitive value
+    //Wrapper == Wrapper => compare object reference, not primitive value. If not the same type, compilation error.
+    //primitive == primitive => compare value (see @ primitive package)
+    //primitive == Wrapper => wrapper is unboxed, compare primitive value
 
     /** equals **/
     System.out.println(new Long(0L).equals(0));//false
