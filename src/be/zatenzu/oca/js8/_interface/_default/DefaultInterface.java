@@ -15,6 +15,9 @@ public interface DefaultInterface{
    * - If a class or interface inherits a abstract and a default method with the same signature in the same time, the compiler will throw an error
    * (@see:tests.intro.q16)
    * - If a interface has 1 or more default method(s) but only one abstract method, it's a functional interface)
+   * - If a class (abstract or not) or an interface inherits one default method and on abstract method with the same signature, 
+   * this class or interface must override the method with a abstract or concrete method.
+   * If it doesn't do that -> Compilation error.
    */
   public default void test(){};
   default void test2(){};//yes, It's a public method
