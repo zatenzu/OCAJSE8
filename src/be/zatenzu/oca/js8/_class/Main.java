@@ -4,6 +4,7 @@ package be.zatenzu.oca.js8._class;
  * Created by tda on 3/09/2015.
  */
 //class public  Main{//access before class is forbidden
+//extends must be before implements
 public class Main{
   /**
    *
