@@ -12,8 +12,8 @@ public interface DefaultInterface{
    * - Like all methods in an interface, a default method is assumed to be public and will not compile if marked as private or protected.
    * - If a class implements two interfaces that have default methods with the same signature, the compiler will throw an error if the class
    * doesn't override it.
-   * - If a class or interface inherits a abstract and a default method with the same signature in the same time, the compiler will throw an error
-   * (@see:tests.intro.q16)
+   * - If a class or interface inherits a abstract and a default method with the same signature in the same time and don't override this method, the compiler will throw an error
+   *(@see:tests.intro.q16)
    * - If a interface has 1 or more default method(s) but only one abstract method, it's a functional interface)
    * - If a class (abstract or not) or an interface inherits one default method and on abstract method with the same signature, 
    * this class or interface must override the method with a abstract or concrete method.
