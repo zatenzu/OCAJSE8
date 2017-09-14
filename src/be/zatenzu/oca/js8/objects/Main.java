@@ -9,6 +9,8 @@ public class Main{
 
     //Objects are stored in the heap
     //Object references are stored on the stack
+    //primitive local varaible are stored on the stack
+    //primitive instance variables are stored in the heap
 
     /** == **/
     String s = "1";
