@@ -5,8 +5,8 @@ public class Constructor
 {
   /**
    * Constructor rules:
-   * - The first statement of every constructor is a call to another constructor within the class
-   * using this(), or a call to a constructor in the direct parent class using super().
+   * - The first statement of every constructor is an explicit call to another constructor within the class
+   * using this(), or an explicit call to a constructor in the direct parent class using super() or an implicit call to super();
    *
    * - The super() or this() call may not be used after the first statement of the constructor.
    *
