@@ -18,6 +18,12 @@ public interface DefaultInterface{
    * - If a class (abstract or not) or an interface inherits one default method and on abstract method with the same signature, 
    * this class or interface must override the method with a abstract or concrete method.
    * If it doesn't do that -> Compilation error.
+   * =============
+   * A + A -> The first non-abstract class must override the method
+   * A + C -> Nothing, concrete wins
+   * A + D -> The child(class, abstract class ou interface) must override the methode.
+   * C + D -> Noting C wins
+   * D + D -> The child(class, abstract class ou interface) must override the methode.
    */
   public default void test(){};
   default void test2(){};//yes, It's a public method
