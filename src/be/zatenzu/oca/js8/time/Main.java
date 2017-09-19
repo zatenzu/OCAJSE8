@@ -264,9 +264,6 @@ public class Main{
     /** public Period withDays(int i) **/
     //returns a copy of the period and sets days to i
 
-    /** public Period withDays(int d) **/
-    //returns a copy of the period and sets days to d
-
     /** public Period withMonths(int m) **/
     //returns a copy of the period and sets months to m
 
